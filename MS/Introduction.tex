@@ -1,0 +1,14 @@
+\section{Introduction}
+
+Principal component Analysis (PCA) is one of the oldest, yet most widely used methods of unsupervised multivariate analysis. For a data matrix $\bfX \in \BR^{n \times p}$ containing observations in $p$ variables for $n$ samples, each column having mean 0, principal components are defined as $p$-dimensional vectors $\bfw_k, 1 \leq k \leq p$ such that
+%
+\begin{align}\label{eqn:eqnPCA}
+\bfw_k &=
+\begin{cases}
+\argmax_{\| \bfw \| = 1} \bfw^T \bfX^T \bfX \bfw \text{ if }k = 1\\
+\argmax_{\| \bfw \| = 1} \bfw^T \bfR_k^T \bfR_k \bfw \text{ if }k > 1;
+\quad \bfR_k = \bfX - \sum_{s=1}^{k-1} \bfX \bfw_s \bfw_s^T
+\end{cases} 
+\end{align}
+%
+Following a lagrange multiplier approach, the eigenvectors of $\bfX^T \bfX$, equivalently the right singular vectors obtained from the singular value decomposition of $\bfX$ provide solutions to (\ref{eqn:eqnPCA}).
