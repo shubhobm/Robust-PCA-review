@@ -1,1 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Robust covariance estimation, data transformation, and beyond}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Robust covariance matrices, projection pursuit}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Data transformation}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Robust PCA and outlier detection}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Principal Component Pursuit}{}% 6
+\BOOKMARK [1][-]{section.4}{Numerical examples}{}% 7
+\BOOKMARK [1][-]{section.5}{Robust PCA in other spaces}{}% 8
+\BOOKMARK [2][-]{subsection.5.1}{Kernel PCA}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Functional PCA}{section.5}% 10
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 11

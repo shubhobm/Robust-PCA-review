@@ -1,25 +1,42 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Adragni and Cook(2009)]{AdragniCook09}
-K.~P. Adragni and R.~D. Cook.
-\newblock Sufficient dimension reduction and prediction in regression.
-\newblock \emph{Phil. Trans. R. Soc. A}, 367:\penalty0 4385--4405, 2009.
+\bibitem[Hubert et~al.(2005)Hubert, Rousseeuw, and Branden]{hubert05}
+M.~Hubert, P.~J. Rousseeuw, and K.~V. Branden.
+\newblock {ROBPCA}: {A} {N}ew {A}pproach to {R}obust {P}rincipal {C}omponent
+  {A}nalysis.
+\newblock \emph{Technometrics}, 47-1:\penalty0 64--79, 2005.
 
-\bibitem[Locantore et~al.(1999)Locantore, Marron, Simpson, Tripoli, Zhang, and
-  Cohen]{LocantoreEtal99}
-N.~Locantore, J.S. Marron, D.G. Simpson, N.~Tripoli, J.T. Zhang, and K.L.
-  Cohen.
-\newblock Robust principal components of functional data.
-\newblock \emph{TEST}, 8:\penalty0 1--73, 1999.
+\bibitem[Maronna et~al.(1976)Maronna, Staehl, and Yohai]{maronna76}
+R.~A. Maronna, W.~A. Staehl, and V.~J. Yohai.
+\newblock Bias-{R}obust {E}stimators of {M}ultivariate {S}catter {B}ased on
+  {P}rojections.
+\newblock \emph{J. Mult. Anal.}, 42:\penalty0 141--161, 1976.
 
-\bibitem[Zuo and Serfling(2000)]{zuo00}
-Y.~Zuo and R.~Serfling.
-\newblock General notions of statistical depth functions.
-\newblock \emph{Ann. Statist.}, 28-2:\penalty0 461--482, 2000.
+\bibitem[Maronna and Yohai(1995)]{MaronnaYohai95}
+R.A. Maronna and V.J. Yohai.
+\newblock {The behavior of the Stahel-Donoho Robust Multivariate Estimator}.
+\newblock \emph{J. Amer. Statist. Assoc.}, 90:\penalty0 329--341, 1995.
+
+\bibitem[Rousseeuw(1985)]{rousseeuw85}
+P.~Rousseeuw.
+\newblock Multivariate estimation with high breakdown point.
+\newblock In \emph{Mathematical Statistics and Applications, Volume B (Proc.
+  4th Pannonian Symp. Math. Statist., Bad Tatzmannsdorf, 1983)}, pages 283--97,
+  Dordrecht, 1985. D. Reidel.
+
+\bibitem[Rousseeuw(1984)]{Rousseeuw84}
+P.~J. Rousseeuw.
+\newblock {Least Median of Squares Regression}.
+\newblock \emph{J. Amer. Statist. Assoc.}, 79:\penalty0 871--880, 1984.
+
+\bibitem[Zuo and Cui(2005)]{ZuoCui05}
+Y.~Zuo and M.~Cui.
+\newblock Depth weighted scatter estimators.
+\newblock \emph{Ann. Statist.}, 33-1:\penalty0 381--413, 2005.
 
 \end{thebibliography}
