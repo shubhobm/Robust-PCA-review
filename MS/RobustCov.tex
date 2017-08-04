@@ -5,6 +5,20 @@
 
 The earliest approaches to robust PCA were based on robustly estimating the population covariance matrix, and using eigenvectors of that estimate as principal components. Some methods of robust covariance matrix estimation include the Minimum Volume Ellipsoid estimator \citep{Rousseeuw84}, a projection-based estimator by \citep{maronna76}, the Minimum Covariance Determinant (MCD) estimator \citep{rousseeuw85} and the Stael-Donoho estimators \citep{MaronnaYohai95,ZuoCui05}. Although these estimators have high breakdown points, they suffered from two severe drawbacks. Firstly the explicit evaluation of the population covariance matrix meant that obtaining principal components were not possible when $n < p$. Secondly, even when $n > p$, these methods become computationally intensive with large data dimensions.
 
+\cite{LiChen85} first introduced the idea of Projection Pursuit (PP) in robust PCA to alleviate these problems. Notice that the case for $k=1$ in (\ref{eqn:eqnPCA}) can be rewritten as
+%
+$$
+\bfw_1 = \argmax_{\| \bfw \| = 1} Var (\bfX \bfw)
+$$
+%
+The proposal of \cite{LiChen85} was to simply use a robust univariate scale estimator $s_n$ (e.g. median, MCD) to obtain the robust PCs from a size $n$ sample $(\bfx_1, \ldots, \bfx_n)$:
+%
+\begin{align*}
+\hat \bfw_1^\text{PP} &= \argmax_{\| \bfw \| = 1} s_n ( \bfw^T \bfx_1, \ldots, \bfw^T \bfx_n );\\
+\hat \bfw_k^\text{PP} &= \argmax_{\| \bfw \| = 1; \bfw \perp \bfw_s, s < k} s_n ( \bfw^T \bfx_1, \ldots, \bfw^T \bfx_n ) \quad \text{for } 1< k \leq p
+\end{align*}
+%
+Aside from not having any restrictions for high-dimensional data, the PP approach allowed the flexibility of using any robust univariate scale estimator, and sequential estimation of the principal components. PP-based robust PCA became a popular method for chemometric data analysis in the 1990-s and early 2000-s, mainly due to the algorithmic developments by \cite{XieEtal93}, \cite{HubertEtal02} and \cite{CrouxEtal07}.
 \subsection{Data transformation}
 
 \subsection{Robust PCA and outlier detection}

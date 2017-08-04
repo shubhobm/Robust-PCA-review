@@ -1,15 +1,33 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Croux et~al.(2007)Croux, Flizmoser, and Oliviera]{CrouxEtal07}
+C.~Croux, P.~Flizmoser, and M.~R. Oliviera.
+\newblock {Algorithms for Projection–Pursuit robust principal component
+  analysis}.
+\newblock \emph{Chemometr. Intell. Lab. Syst.}, 87:\penalty0 218--225, 2007.
+
+\bibitem[Hubert et~al.(2002)Hubert, Rousseeuw, and Verboven]{HubertEtal02}
+M.~Hubert, P.~J. Rousseeuw, and S.~Verboven.
+\newblock {A Fast Method for Robust Principal Components With Applications to
+  Chemometrics}.
+\newblock \emph{Chemometr. Intell. Lab. Syst.}, 60:\penalty0 101--111, 2002.
+
 \bibitem[Hubert et~al.(2005)Hubert, Rousseeuw, and Branden]{hubert05}
 M.~Hubert, P.~J. Rousseeuw, and K.~V. Branden.
 \newblock {ROBPCA}: {A} {N}ew {A}pproach to {R}obust {P}rincipal {C}omponent
   {A}nalysis.
 \newblock \emph{Technometrics}, 47-1:\penalty0 64--79, 2005.
+
+\bibitem[Li and Chen(1985)]{LiChen85}
+G.~Li and Z.~Chen.
+\newblock {Projection-pursuit approach to robust dispersion matrices and
+  principal components: Primary theory and Monte Carlo}.
+\newblock \emph{J. Amer. Statist. Assoc.}, 80\penalty0 (759--766), 1985.
 
 \bibitem[Maronna et~al.(1976)Maronna, Staehl, and Yohai]{maronna76}
 R.~A. Maronna, W.~A. Staehl, and V.~J. Yohai.
@@ -33,6 +51,11 @@ P.~Rousseeuw.
 P.~J. Rousseeuw.
 \newblock {Least Median of Squares Regression}.
 \newblock \emph{J. Amer. Statist. Assoc.}, 79:\penalty0 871--880, 1984.
+
+\bibitem[Xie et~al.(1993)Xie, Wang, Liang, Sun, Song, and Yu]{XieEtal93}
+Y.-L. Xie, J.-H. Wang, Y.-Z. Liang, L.-X. Sun, X.-H. Song, and R.-Q. Yu.
+\newblock Robust principal component analysis by projection pursuit.
+\newblock \emph{J. Chemometr.}, 7:\penalty0 527--541, 1993.
 
 \bibitem[Zuo and Cui(2005)]{ZuoCui05}
 Y.~Zuo and M.~Cui.
