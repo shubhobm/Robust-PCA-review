@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -39,6 +39,11 @@ R.~A. Maronna, W.~A. Staehl, and V.~J. Yohai.
 R.A. Maronna and V.J. Yohai.
 \newblock {The behavior of the Stahel-Donoho Robust Multivariate Estimator}.
 \newblock \emph{J. Amer. Statist. Assoc.}, 90:\penalty0 329--341, 1995.
+
+\bibitem[M\"{o}tt\"{o}nen and Oja(1995)]{MottonenOja95}
+J.~M\"{o}tt\"{o}nen and H.~Oja.
+\newblock Multivariate spatial sign and rank methods.
+\newblock \emph{J. Nonparametric Stat.}, 1995.
 
 \bibitem[Rousseeuw(1985)]{rousseeuw85}
 P.~Rousseeuw.

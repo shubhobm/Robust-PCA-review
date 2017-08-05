@@ -11,7 +11,7 @@ $$
 \bfw_1 = \argmax_{\| \bfw \| = 1} Var (\bfX \bfw)
 $$
 %
-The proposal of \cite{LiChen85} was to simply use a robust univariate scale estimator $s_n$ (e.g. median, MCD) to obtain the robust PCs from a size $n$ sample $(\bfx_1, \ldots, \bfx_n)$:
+The proposal of \cite{LiChen85} was to simply use a robust univariate scale estimator $s_n$ (e.g. median, MCD) to obtain the robust PCs from a size $n$ sample $\bfX = (\bfx_1, \ldots, \bfx_n)$:
 %
 \begin{align*}
 \hat \bfw_1^\text{PP} &= \argmax_{\| \bfw \| = 1} s_n ( \bfw^T \bfx_1, \ldots, \bfw^T \bfx_n );\\
@@ -19,7 +19,47 @@ The proposal of \cite{LiChen85} was to simply use a robust univariate scale esti
 \end{align*}
 %
 Aside from not having any restrictions for high-dimensional data, the PP approach allowed the flexibility of using any robust univariate scale estimator, and sequential estimation of the principal components. PP-based robust PCA became a popular method for chemometric data analysis in the 1990-s and early 2000-s, mainly due to the algorithmic developments by \cite{XieEtal93}, \cite{HubertEtal02} and \cite{CrouxEtal07}.
-\subsection{Data transformation}
+
+The ROBPCA method of \cite{hubert05} combines the above two approaches. Specifically, ROBPCA consists of the following steps:
+%
+\begin{itemize}
+\item Do an initial dimension reduction of the data matrix: $\bfX_{n \times p} \mapsto \bfZ_{n \times r}, r \leq p$ by projecting all data points on the subspace formed by the right singular vectors of $\bfX$:
+%
+$$
+\bfX = \bfU_{n \times r} \bfD_{r \times r} \bfV_{r \times p}; \quad
+\bfZ = \bfU \bfD
+$$
+
+\item Calculate the outlyingness of all samples:
+%
+$$
+O(\bfz_i) = \max_{\bfv \in B} \frac{| \bfz_i^T \bfv - m_n (\bfz_j^T \bfv)|}{s_n (\bfz_j^T \bfv )}
+$$
+%
+where $m_n$ and $s_n$ are robust location and scale estimators, respectively. When $\binom{n}{2} < 250$, $B$ is the set of vectors passing through all pairs of sample points, and is a collection of 250 randomly chosen non-zero vectors in $\BR^{r}$ otherwise.
+
+Use the top $k$ PCs calculated from the $h$ least outlying points ($k \leq r; k, h$ suitably chosen) to transform the data again:
+%
+$$
+\bfZ^* =  \bfZ \bfP_0; \quad \bfP_0 \in \BR_{r \times k}
+$$
+
+%\item If $s_n (\bfz_j^T \bfv ) = 0$ for some $\bfv$, then all samples are projected onto the hyperplane orthogonal to that $\bfv$ and these projection are taken as the new observations to work with. This optional step potentially reduces data dimension to some $r_1 \leq r_0$. for notational convenience, we still refer to this transformed data as $\bfZ$.
+
+\item Robustly estimate the scatter matrix of $\bfZ^*$, take its eigenvectors as the estimated robust PCs.
+\end{itemize}
+
+As \cite{hubert05} showed through application on simulated and real data, the combination of a PP approach (first step) and robust scatter matrix estimation (third step) used by ROBPCA results in efficiency gains in estimating population principal components, as well as better detection of outlying points, compared to either of the previous types of methods for robust PCA.
+
+\subsection{Data transformation and $M$-estimation}
+
+A parallel approach towards robust PCA has also been developed by researchers, that is focused on the usage of robust transformations on the data, specifically multivariate signs and ranks, and related $M$-estimates of scatter. First introduced by \cite{MottonenOja95}, the multivariate sign or \textit{spatial sign} of a vector $\bfx \in \BR^p$ with respect to a location parameter $\bfmu \in \BR^p$ is defined as:
+%
+$$
+\bfS (\bfx) = \frac{\bfx  - \bfmu }{\| \bfx - \bfmu\|} \BI_{\bfx \neq \bfmu}
+$$
+%
+When $\bfx$ is a random sample from an elliptical distribution, the sign transformation keeps the population eigenvectors constant. Since all vectors in the same direction get mapped to the same spatial sign regardless of their magnitude, eigenvector estimates calculated from the SVD of a sign transformed data matrix can act as robust PCs.
 
 \subsection{Robust PCA and outlier detection}
 Aside from obtaining a lower dimensional projection of the data matrix $\bfX$ in spite of outliers that is close enough to the projection of $\bfX$ by the first few population eigenvectors, detecting the outliers themselves is also closely associated with robust PCA. These samples can be of interest for mechanistic reasons. For example in the analysis of near infra-red absorbance for 39 gasoline samples over 226 wavelengths using ROBPCA \citep{hubert05}, six compounds are flagged as outliers, and these turn out to be the only samples containing alcohol. \cite{hubert05} also introduced a notion of outlier diagnostics that is applicable to any method of robust PCA and can serve as a means to compare different relevant techniques as well.
