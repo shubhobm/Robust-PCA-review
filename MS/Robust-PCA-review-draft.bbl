@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -29,6 +29,25 @@ G.~Li and Z.~Chen.
   principal components: Primary theory and Monte Carlo}.
 \newblock \emph{J. Amer. Statist. Assoc.}, 80\penalty0 (759--766), 1985.
 
+\bibitem[Locantore et~al.(1999)Locantore, Marron, Simpson, Tripoli, Zhang, and
+  Cohen]{LocantoreEtal99}
+N.~Locantore, J.S. Marron, D.G. Simpson, N.~Tripoli, J.T. Zhang, and K.L.
+  Cohen.
+\newblock Robust principal components of functional data.
+\newblock \emph{TEST}, 8:\penalty0 1--73, 1999.
+
+\bibitem[Magyar and Tyler(2014)]{magyar14}
+A.F. Magyar and D.E. Tyler.
+\newblock The asymptotic inadmissibility of the spatial sign covariance matrix
+  for elliptically symmetric distributions.
+\newblock \emph{Biometrika}, 101:\penalty0 673--688, 2014.
+
+\bibitem[Majumdar and Chatterjee(2015)]{Majumdar15}
+S.~Majumdar and S.~Chatterjee.
+\newblock Robust estimation of principal components from depth-based
+  multivariate rank covariance matrix.
+\newblock \url{http://arxiv.org/abs/1502.07042}, 2015.
+
 \bibitem[Maronna et~al.(1976)Maronna, Staehl, and Yohai]{maronna76}
 R.~A. Maronna, W.~A. Staehl, and V.~J. Yohai.
 \newblock Bias-{R}obust {E}stimators of {M}ultivariate {S}catter {B}ased on
@@ -57,6 +76,16 @@ P.~J. Rousseeuw.
 \newblock {Least Median of Squares Regression}.
 \newblock \emph{J. Amer. Statist. Assoc.}, 79:\penalty0 871--880, 1984.
 
+\bibitem[Tyler(1987)]{tyler87}
+D.E. Tyler.
+\newblock A distribution-free {M}-estimator of multivariate scatter.
+\newblock \emph{Ann. Statist.}, 15:\penalty0 234--251, 1987.
+
+\bibitem[Visuri et~al.(2000)Visuri, Koivunen, and Oja]{visuri00}
+S.~Visuri, V.~Koivunen, and H.~Oja.
+\newblock Sign and rank covariance matrices.
+\newblock \emph{J. Statist. Plan. Inf.}, 91:\penalty0 557--575, 2000.
+
 \bibitem[Xie et~al.(1993)Xie, Wang, Liang, Sun, Song, and Yu]{XieEtal93}
 Y.-L. Xie, J.-H. Wang, Y.-Z. Liang, L.-X. Sun, X.-H. Song, and R.-Q. Yu.
 \newblock Robust principal component analysis by projection pursuit.
@@ -66,5 +95,10 @@ Y.-L. Xie, J.-H. Wang, Y.-Z. Liang, L.-X. Sun, X.-H. Song, and R.-Q. Yu.
 Y.~Zuo and M.~Cui.
 \newblock Depth weighted scatter estimators.
 \newblock \emph{Ann. Statist.}, 33-1:\penalty0 381--413, 2005.
+
+\bibitem[Zuo and Serfling(2000)]{zuo00}
+Y.~Zuo and R.~Serfling.
+\newblock General notions of statistical depth functions.
+\newblock \emph{Ann. Statist.}, 28-2:\penalty0 461--482, 2000.
 
 \end{thebibliography}
