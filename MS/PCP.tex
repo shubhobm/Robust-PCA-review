@@ -1,2 +1,18 @@
 \section{Principal Component Pursuit}
 \label{section:sec3}
+
+The above notion of outliers depends on the fact that the $n \times p$ data matrix $\bfX$ is composed of observations from several independent samples in its rows, and some of these samples have corrupted observations. However, in many practical situations, rows of $\bfX$ might not be independent, the corrupted observations can have a pattern across samples, or both. For example in face or handwriting recognition, each individual picture can be taken as a data matrix. The value a pixel takes corresponds to an entry in the data matrix, with noisy pixels denoting corrupted observations. Although the underlying low-rank structure is still of interest in such situations, for example the face of a person or a handwritten digit, the problem is fundamentally different because of the inherent structure present in the data.
+
+\cite{CandesEtal09} first introduced {\it Principal Component Pursuit} (PCP), which decomposes the data matrix into low-rank and sparse components to tackle this situation. Formally, PCP considers the following additive model:
+%
+\begin{align}\label{eqn:PCPmodel}
+\bfX = \bfL_0 + \bfS_0
+\end{align}
+%
+with rank$(\bfL) = r < p$ and $\bfS$ sparse. The low-rank and sparse structures are recovered using nuclear norm penalization on the first component and $\ell_1$-norm penalization on the second component, respectively:
+%
+\begin{align}
+& \text{minimize } \| \bfL \|_* + \| \bfS \|_1; \quad \text{subject to } \bfL + \bfS = \bfX
+\end{align}
+%
+where $\|.\|_*$ denotes the nuclear norm of a matrix, i.e. sum of its singular values, and $\|.\|_1$ denotes $\ell_1$-norm, i.e. sum of the absolute values of its entries. \cite{CandesEtal09} proved that given the true underlying structure is indeed low-rank-plus-sparse, i.e. adheres to the decomposition in (\ref{eqn:PCPmodel}), a polynomial time algorithm based on convex programming can recover these matrices, and this is possible for arbitrary magnitudes of entries in the sparse component.
