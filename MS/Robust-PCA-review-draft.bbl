@@ -1,18 +1,36 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Becker et~al.(2011)Becker, Cand\'es, and Grant]{BeckerEtal11}
+S.~Becker, E.~Cand\'es, and M.~Grant.
+\newblock {TFOCS: flexible first-order methods for rank minimization}.
+\newblock In \emph{Low-rank Matrix Optimization Symposium, SIAM Conference on
+  Optimization}, 2011.
+
+\bibitem[Bouwmans and Zahzah(2014)]{Bouwmans14}
+T.~Bouwmans and E.~H. Zahzah.
+\newblock {Robust PCA via Principal Component Pursuit: A review for a
+  comparative evaluation in video surveillance}.
+\newblock \emph{Comput. Vis. Image Underst.}, 122:\penalty0 22--34, 2014.
+
 \bibitem[Cand\'es et~al.(2009)Cand\'es, Li, Ma, and Wright]{CandesEtal09}
 E.~J. Cand\'es, X.~Li, Y.~Ma, and J.~Wright.
 \newblock Robust principal component analysis?
 \newblock \emph{J. ACM}, 58:\penalty0 11, 2009.
 
+\bibitem[Chen et~al.(2011)Chen, Jalali, Sanghavi, and Caramanis]{ChenEtal11}
+Y.~Chen, A.~Jalali, S.~Sanghavi, and C.~Caramanis.
+\newblock Low-rank matrix recovery from errors and erasures.
+\newblock In \emph{2011 IEEE International Symposium on Information Theory
+  Proceedings}, pages 2313--2317, 2011.
+
 \bibitem[Croux et~al.(2007)Croux, Flizmoser, and Oliviera]{CrouxEtal07}
 C.~Croux, P.~Flizmoser, and M.~R. Oliviera.
-\newblock {Algorithms for Projection–Pursuit robust principal component
+\newblock {Algorithms for Projection-Pursuit robust principal component
   analysis}.
 \newblock \emph{Chemom. Intell. Lab. Syst.}, 87:\penalty0 218--225, 2007.
 
@@ -81,6 +99,20 @@ P.~J. Rousseeuw.
 \newblock {Least Median of Squares Regression}.
 \newblock \emph{J. Amer. Statist. Assoc.}, 79:\penalty0 871--880, 1984.
 
+\bibitem[Shang et~al.(2014)Shang, Liu, Cheng, and Cheng]{ShangEtal14}
+F.~Shang, Y.~Liu, J.~Cheng, and H.~Cheng.
+\newblock {Robust Principal Component Analysis with Missing Data}.
+\newblock In \emph{Proceedings of the 23rd ACM International Conference on
+  Conference on Information and Knowledge Management}, {CIKM '14}, pages
+  1149--1158. ACM, 2014.
+
+\bibitem[Tang and Nehorai(2011)]{TangNehorai11}
+G.~Tang and A.~Nehorai.
+\newblock Robust principal component analysis based on low-rank and
+  block-sparse matrix decomposition.
+\newblock In \emph{2011 45th Annual Conference on Information Sciences and
+  Systems}, pages 1--5, 2011.
+
 \bibitem[Tyler(1987)]{tyler87}
 D.E. Tyler.
 \newblock A distribution-free {M}-estimator of multivariate scatter.
@@ -91,10 +123,22 @@ S.~Visuri, V.~Koivunen, and H.~Oja.
 \newblock Sign and rank covariance matrices.
 \newblock \emph{J. Statist. Plan. Inf.}, 91:\penalty0 557--575, 2000.
 
+\bibitem[Wohlberg et~al.(2012)Wohlberg, Chartrand, and Theiler]{WohlbergEtal12}
+B.~Wohlberg, R.~Chartrand, and J.~Theiler.
+\newblock Local principal component pursuit for nonlinear datasets.
+\newblock In \emph{2012 IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}, pages 3925--3928, 2012.
+
 \bibitem[Xie et~al.(1993)Xie, Wang, Liang, Sun, Song, and Yu]{XieEtal93}
 Y.-L. Xie, J.-H. Wang, Y.-Z. Liang, L.-X. Sun, X.-H. Song, and R.-Q. Yu.
 \newblock Robust principal component analysis by projection pursuit.
 \newblock \emph{J. Chemom.}, 7:\penalty0 527--541, 1993.
+
+\bibitem[Zhou et~al.(2010)Zhou, Li, Wright, Cand\'es, and Ma]{ZhouEtal10}
+Z.~Zhou, X.~Li, J.~Wright, E.~Cand\'es, and Y.~Ma.
+\newblock Stable principal component pursuit.
+\newblock In \emph{2010 IEEE International Symposium on Information Theory
+  Proceedings}, pages 1518--1522, 2010.
 
 \bibitem[Zuo and Cui(2005)]{ZuoCui05}
 Y.~Zuo and M.~Cui.
