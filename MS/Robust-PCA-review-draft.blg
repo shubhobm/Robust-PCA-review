@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Robust-PCA-review-draft.aux
 The style file: plainnat.bst
 Database file #1: reviewbib.bib
+Repeated entry---line 350 of file reviewbib.bib
+ : @book {maronna06
+ :                 ,
+I'm skipping whatever remains of this entry
 Name 1 in "Locantore, N., and J.S. Marron and D.G. Simpson and N. Tripoli and J.T. Zhang and K.L. Cohen" has a comma at the end for entry LocantoreEtal99
 while executing---line 1347 of file plainnat.bst
 Name 1 in "Locantore, N., and J.S. Marron and D.G. Simpson and N. Tripoli and J.T. Zhang and K.L. Cohen" has a comma at the end for entry LocantoreEtal99
@@ -9,4 +13,4 @@ Name 1 in "Locantore, N., and J.S. Marron and D.G. Simpson and N. Tripoli and J.
 while executing---line 1429 of file plainnat.bst
 Name 1 in "Locantore, N., and J.S. Marron and D.G. Simpson and N. Tripoli and J.T. Zhang and K.L. Cohen" has a comma at the end for entry LocantoreEtal99
 while executing---line 1429 of file plainnat.bst
-(There were 4 error messages)
+(There were 5 error messages)

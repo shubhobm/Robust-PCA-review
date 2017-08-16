@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -6,7 +6,7 @@
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
 \bibitem[Becker et~al.(2011)Becker, Cand\'es, and Grant]{BeckerEtal11}
-S.~Becker, E.~Cand\'es, and M.~Grant.
+S.~Becker, E.~J. Cand\'es, and M.~Grant.
 \newblock {TFOCS: flexible first-order methods for rank minimization}.
 \newblock In \emph{Low-rank Matrix Optimization Symposium, SIAM Conference on
   Optimization}, 2011.
@@ -70,6 +70,11 @@ S.~Majumdar and S.~Chatterjee.
 \newblock Robust estimation of principal components from depth-based
   multivariate rank covariance matrix.
 \newblock \url{http://arxiv.org/abs/1502.07042}, 2015.
+
+\bibitem[Maronna et~al.(2006)Maronna, Martin, and Yohai]{maronna06}
+R.~Maronna, D.~Martin, and V.~Y. Yohai.
+\newblock \emph{Robust {S}tatistics: {T}heory and {M}ethods}.
+\newblock Wiley, New York, NY, 2006.
 
 \bibitem[Maronna et~al.(1976)Maronna, Staehl, and Yohai]{maronna76}
 R.~A. Maronna, W.~A. Staehl, and V.~J. Yohai.
@@ -135,7 +140,7 @@ Y.-L. Xie, J.-H. Wang, Y.-Z. Liang, L.-X. Sun, X.-H. Song, and R.-Q. Yu.
 \newblock \emph{J. Chemom.}, 7:\penalty0 527--541, 1993.
 
 \bibitem[Zhou et~al.(2010)Zhou, Li, Wright, Cand\'es, and Ma]{ZhouEtal10}
-Z.~Zhou, X.~Li, J.~Wright, E.~Cand\'es, and Y.~Ma.
+Z.~Zhou, X.~Li, J.~Wright, E.~J. Cand\'es, and Y.~Ma.
 \newblock Stable principal component pursuit.
 \newblock In \emph{2010 IEEE International Symposium on Information Theory
   Proceedings}, pages 1518--1522, 2010.
