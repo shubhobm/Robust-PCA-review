@@ -1,6 +1,6 @@
 ## Analyze_octane: analysis of octane data
 rm(list=ls())
-setwd("d:/Study/My projects/Robust-PCA-review/Codes")
+setwd("d:/Study/My projects/Depth-scatter/Codes")
 source('misc_functions.R')
 
 ## Octane data

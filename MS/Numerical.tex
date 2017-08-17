@@ -1,13 +1,13 @@
-\section{Numerical examples}
+\section*{\sffamily \Large NUMERICAL EXAMPLES}
 \label{section:sec4}
 
 In this section we present two data analytical scenarios to demonstrate the comparative performance and applicability of the different approaches of robust PCA we have discussed.
 
-\subsection{Bus data}
+\subsection*{\sffamily \large Bus data}
 Available in the R package \texttt{rrcov}, this dataset consists of the measurements of 18 image features for 218 buses. Following a similar analysis in \cite{maronna06}, pp. 213, we set aside variable 9 and scale the other variables by dividing with their respective median absolute deviations (MAD). We do this done because all the variables had much larger standard deviations compared to their MADs, and variable 9 had MAD = 0. Following this, we compare the performances of the classical PCA (CPCA), PCA based on the eigenvector estimate from the MCD covariance matrix (MPCA), spatial sign-based PCA (SPCA), depth-based weighted sign PCA (DPCA), ROBPCA, and PCP.
-For the sake of uniformity, we use projection depth as our fixed depth function while doing DPCA.
+We use projection depth as our choice of depth function while doing DPCA.
 
-For all classical PCA methods, we set the number of PCs at 3. We compare the above methods using the distance of actual data and their projections on the principal component space. For PCP, these are is simply row norms of the sparse matrix $\bfS_0$ obtained from the procedure, while for other methods this is the orthogonal distances of corresponding samples. Each of its column lists different quantiles of the squared orthogonal distance for a sample point from the hyperplane formed by top 3 PCs estimated by the corresponding method. Table \ref{table:bus_table2} presents the different quantiles of squares of these distances for all the methods. For DPCA, the estimated principal component subspaces are closer to the data than CPCA for more than 90\% of samples, and the distance only becomes larger for higher quantiles. This means that for CPCA, estimated basis vectors of the hyperspace get pulled by extreme outlying points, while the influence of these outliers is very low for DPCA. SPCA and ROBPCA perform very closely in this respect, the percentage of points that have less squared distance than CPCA being between 80\% and 90\% for both of them. This percentage is only 60\% for PCP and 50\% for MPCA, which suggests that the corresponding 3-dimensional subspace estimated by MCD is possibly not an accurate representation of the truth, also there is probably enough noise in the data apart from the low-rank and sparse components estimated by PCP.
+For all classical PCA methods, we set the number of PCs at 3. We compare the above methods using the distance of actual data and their projections on the principal component space. For PCP, these are is simply row norms of the sparse matrix $\bfS_0$ obtained from the procedure, while for other methods this is the orthogonal distances of corresponding samples. Each of its column lists different quantiles of the squared orthogonal distance for a sample point from the hyperplane formed by top 3 PCs estimated by the corresponding method. Table \ref{table:bus_table2} presents the different quantiles of squares of these distances for all the methods. For DPCA, the estimated principal component subspaces are closer to the data than CPCA for more than 90\% of samples, and the distance only becomes larger for higher quantiles. This means that for CPCA, estimated basis vectors of the hyperspace get pulled by extreme outlying points, while the influence of these outliers is very low for DPCA. SPCA and ROBPCA perform very closely in this respect, the percentage of points that have less squared distance than CPCA being between 80\% and 90\% for both of them. This percentage is only 60\% for PCP and 50\% for MPCA, which suggests that the corresponding 3-dimensional subspace estimated by MCD is possibly not an accurate representation of the truth, and there is probably enough noise in the data apart from the low-rank and sparse components estimated by PCP.
 
 %\begin{table}[t]
 %\centering
@@ -47,5 +47,11 @@ For all classical PCA methods, we set the number of PCs at 3. We compare the abo
     \label{table:bus_table2}
 \end{table}
 
+\subsection*{\sffamily \large Image denoising}
 
-\subsection{Image denoising}
+\begin{figure}[t]
+\centering
+\includegraphics[width=.8\textwidth]{all_denoise}
+\caption{Denoising results of four images. Left to right in a row indicates the original image, image with noise added, and denoising by DPCA, ROBPCA and PCP, respectively.}
+\label{fig:figDenoise}
+\end{figure}

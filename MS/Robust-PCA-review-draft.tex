@@ -1,37 +1,70 @@
-\documentclass[fleqn,11pt]{article}
-%\usepackage{mycommands1,color,caption,hyperref,amsmath,amssymb,amsthm,mathabx}
-%\usepackage[pdftex]{graphicx}
+%\documentclass[fleqn,11pt]{article}
+%%\usepackage{mycommands1,color,caption,hyperref,amsmath,amssymb,amsthm,mathabx}
+%%\usepackage[pdftex]{graphicx}
+%%\usepackage[round]{natbib}
+%%\usepackage{subfigure,epsfig}
+%
+%\usepackage{mycommands1,amssymb,amsmath,amsthm,color,pagesize,outlines,cite,subfigure,epsfig}
+%\usepackage[small]{caption}
+%\usepackage{hyperref} % for linking references 
+%\usepackage{stackrel}
+%
 %\usepackage[round]{natbib}
-%\usepackage{subfigure,epsfig}
+%
+%% for algorithm
+%\usepackage[noend]{algpseudocode}
+%\usepackage{algorithm}
+%
+%%% Appendix theorem counter
+%\usepackage{chngcntr}
+%\usepackage{apptools}
+%\AtAppendix{\counterwithin{Theorem}{section}}
+%
+%\numberwithin{equation}{section}
+%
+%% measurements for 1 inch margin
+%\addtolength{\oddsidemargin}{-.875in}
+%\addtolength{\evensidemargin}{-.875in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{-.875in}
+%\addtolength{\textheight}{1.75in}
+%
+%\usepackage{hyperref} % for linking references 
+%\usepackage{setspace}
+%\doublespacing
 
-\usepackage{mycommands1,amssymb,amsmath,amsthm,color,pagesize,outlines,cite,subfigure,epsfig}
-\usepackage[small]{caption}
-\usepackage{hyperref} % for linking references 
-\usepackage{stackrel}
+% Modified for use with Wiley Interdisciplinary Reviews Copyright (C) (2016). All rights reserved.
+\documentclass[12pt]{article}
 
+\setlength{\oddsidemargin}{0in}  %left margin position, reference is one inch
+\setlength{\textwidth}{6.5in}    %width of text=8.5-1in-1in for margin
+\setlength{\topmargin}{-0.5in}    %reference is at 1.5in, -.5in gives a start of about 1in from top
+\setlength{\textheight}{9in}     %length of text=11in-1in-1in (top and bot. marg.) 
+
+\usepackage{amsmath,amssymb,amsthm,mycommands1}
 \usepackage[round]{natbib}
+\usepackage{graphicx}% Include figure files
+\usepackage{caption}
+\usepackage{color}% Include colors for document elements
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{float}
+\usepackage{hyperref} % hyperref must be loaded before apacite
+%\usepackage{apacite}
+%\bibliographystyle{apacite}
+\hypersetup{ colorlinks = true, citecolor = black, urlcolor = blue}
+%\usepackage[nolists, nomarkers, figuresfirst]{endfloat}
 
-% for algorithm
-\usepackage[noend]{algpseudocode}
-\usepackage{algorithm}
+\definecolor{background-color}{gray}{0.98}
 
-%% Appendix theorem counter
-\usepackage{chngcntr}
-\usepackage{apptools}
-\AtAppendix{\counterwithin{Theorem}{section}}
+\title{Robust Principal Component Analysis: a Review}
+% The title should not exceed 20 words. Please be original and try to include keywords, especially before a colon if applicable, as they will increase the discoverability of your article. Visit http://media.wiley.com/assets/7158/18/SEO_For_Authors.pdf for tips on search engine optimization.
 
-\numberwithin{equation}{section}
+\author{Subhabrata Majumdar\thanks{Department of Biology, University 1, ...}, Snigdhansu Chatterjee\thanks{Department of Chemistry, University 2, ...}}
+% The preferred (but optional) format for author names is First Name, Middle Initial, Last Name.
+% Wiley requires that all authors disclose any potential conflicts of interest.  Any interest or relationship, financial or otherwise, that might be perceived as influencing an author’s objectivity is considered a potential conflict of interest. The existence of a conflict of interest does not preclude publication.
 
-% measurements for 1 inch margin
-\addtolength{\oddsidemargin}{-.875in}
-\addtolength{\evensidemargin}{-.875in}
-\addtolength{\textwidth}{1.75in}
-\addtolength{\topmargin}{-.875in}
-\addtolength{\textheight}{1.75in}
-
-\usepackage{hyperref} % for linking references 
-\usepackage{setspace}
-\doublespacing
+%\date{}
 
 \DeclareMathOperator*{\ve}{vec}
 \DeclareMathOperator*{\diag}{diag }
@@ -40,6 +73,7 @@
 \DeclareMathOperator*{\argmax}{arg\,max}
 
 \begin{document}
+\maketitle
 
 \newtheorem{Theorem}{Theorem}[section]
 \newtheorem{Lemma}[Theorem]{Lemma}
@@ -48,20 +82,37 @@
 \newtheorem{Conjecture}[Theorem]{Conjecture}
 \theoremstyle{definition} \newtheorem{Definition}[Theorem]{Definition}
 
-\title{Robust Principal Component Analysis: a Review}
 \date{}
-\author{Subhabrata Majumdar, Snigdhansu Chatterjee}
+%\author{Subhabrata Majumdar, Snigdhansu Chatterjee}
 \maketitle
 
-Abstract:
 %{(\colrbf will change)} We introduce a composition of the spatial sign function \citep{LocantoreEtal99} with transformations on functions that are essentially the outlyingness maps of \cite{zuo00}, with a few restrictions for technical convenience. After a brief consideration of its performance in the location problem for elliptical distributions, we define a multivariate rank vector using this. We discuss several aspects of its performance in estimating components of the covariance matrix in the data-generating elliptical distribution: its eigenvectors, eigenvalues and the covariance matrix itself. Several simulation studies and data examples outline the utility of these methods, and we also discuss their implementation in Sufficient Dimension Reduction \citep{AdragniCook09} and functional outlier detection.
 \vspace{.5cm}
 
-Keywords:
-Data depth; Multivariate ranking; Principal components analysis; robust statistics; functional data; dimension reduction
+\begin{center}
+\subsubsection*{\small Article Type:}
+Advanced Review
+%The Article Type denotes the intended level of readership for your article. An Editor may have mentioned a specific Article Type in your invitation letter; if so, please let them know if you think a different Article Type better suits your topic.
 
-\newpage
-%% Chapter 2: Signed peripherality
+\hfill \break
+\thanks
+
+\subsubsection*{Abstract}
+\begin{flushleft}
+The abstract should not exceed 250 words and should be a concise description of the article and its implications. It should include all keywords associated with your article, as keywords increase its discoverability. Please do not include phrases such as ``This article discusses \ldots" or ``Here we review \ldots", references to other articles, or URLs.
+\end{flushleft}
+\end{center}
+
+\subsubsection*{Keywords}
+Principal Component Analysis; Robustness; ROBPCA; Spatial signs; data depth; Principal Component Pursuit
+
+\clearpage
+
+\renewcommand{\baselinestretch}{1.5}
+\normalsize
+
+\clearpage
+
 %
 \input{Introduction}
 \input{RobustCov}
@@ -71,7 +122,7 @@ Data depth; Multivariate ranking; Principal components analysis; robust statisti
 \input{Conclusion}
 
 
-\bibliographystyle{plainnat}
+\bibliographystyle{apalike}
 \bibliography{reviewbib}
 
 \end{document}
