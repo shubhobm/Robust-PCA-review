@@ -19,8 +19,13 @@ process.img = function(img){
   ## add noise
   n = nrow(img)
   p = ncol(img)
+  nn = n*p
+  
+  ## add speckle noise to 10% pixels
   img.noise = img
-  img.noise[sample(1:n,20),sample(1:p,20)] = sample(c(0,1), 20^2, replace=T)
+  img.ind = cbind(as.numeric(row(img.noise)), as.numeric(col(img.noise)))
+  n.noise = ceiling(.1*nn)
+  img.noise[img.ind[sample(1:nn, n.noise),]] = sample(c(0,1), n.noise, replace=T)
   
   mus = apply(img.noise, 2, mean)
   sigmas = apply(img.noise, 2, sd)

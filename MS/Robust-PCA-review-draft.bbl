@@ -1,158 +1,177 @@
-\begin{thebibliography}{26}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{}
 
-\bibitem[Becker et~al.(2011)Becker, Cand\'es, and Grant]{BeckerEtal11}
-S.~Becker, E.~J. Cand\'es, and M.~Grant.
+\bibitem[Becker et~al., 2011]{BeckerEtal11}
+Becker, S., Cand\'es, E.~J., and Grant, M. (2011).
 \newblock {TFOCS: flexible first-order methods for rank minimization}.
-\newblock In \emph{Low-rank Matrix Optimization Symposium, SIAM Conference on
-  Optimization}, 2011.
+\newblock In {\em Low-rank Matrix Optimization Symposium, SIAM Conference on
+  Optimization}.
 
-\bibitem[Bouwmans and Zahzah(2014)]{Bouwmans14}
-T.~Bouwmans and E.~H. Zahzah.
+\bibitem[Bouwmans and Zahzah, 2014]{Bouwmans14}
+Bouwmans, T. and Zahzah, E.~H. (2014).
 \newblock {Robust PCA via Principal Component Pursuit: A review for a
   comparative evaluation in video surveillance}.
-\newblock \emph{Comput. Vis. Image Underst.}, 122:\penalty0 22--34, 2014.
+\newblock {\em Comput. Vis. Image Underst.}, 122:22--34.
 
-\bibitem[Cand\'es et~al.(2009)Cand\'es, Li, Ma, and Wright]{CandesEtal09}
-E.~J. Cand\'es, X.~Li, Y.~Ma, and J.~Wright.
+\bibitem[Cand\'es et~al., 2009]{CandesEtal09}
+Cand\'es, E.~J., Li, X., Ma, Y., and Wright, J. (2009).
 \newblock Robust principal component analysis?
-\newblock \emph{J. ACM}, 58:\penalty0 11, 2009.
+\newblock {\em J. ACM}, 58:11.
 
-\bibitem[Chen et~al.(2011)Chen, Jalali, Sanghavi, and Caramanis]{ChenEtal11}
-Y.~Chen, A.~Jalali, S.~Sanghavi, and C.~Caramanis.
+\bibitem[Chen et~al., 2011]{ChenEtal11}
+Chen, Y., Jalali, A., Sanghavi, S., and Caramanis, C. (2011).
 \newblock Low-rank matrix recovery from errors and erasures.
-\newblock In \emph{2011 IEEE International Symposium on Information Theory
-  Proceedings}, pages 2313--2317, 2011.
+\newblock In {\em 2011 IEEE International Symposium on Information Theory
+  Proceedings}, pages 2313--2317.
 
-\bibitem[Croux et~al.(2007)Croux, Flizmoser, and Oliviera]{CrouxEtal07}
-C.~Croux, P.~Flizmoser, and M.~R. Oliviera.
+\bibitem[Croux et~al., 2007]{CrouxEtal07}
+Croux, C., Flizmoser, P., and Oliviera, M.~R. (2007).
 \newblock {Algorithms for Projection-Pursuit robust principal component
   analysis}.
-\newblock \emph{Chemom. Intell. Lab. Syst.}, 87:\penalty0 218--225, 2007.
+\newblock {\em Chemom. Intell. Lab. Syst.}, 87:218--225.
 
-\bibitem[Hubert et~al.(2002)Hubert, Rousseeuw, and Verboven]{HubertEtal02}
-M.~Hubert, P.~J. Rousseeuw, and S.~Verboven.
-\newblock {A Fast Method for Robust Principal Components With Applications to
-  Chemometrics}.
-\newblock \emph{Chemom. Intell. Lab. Syst.}, 60:\penalty0 101--111, 2002.
+\bibitem[Georghiades et~al., 2001]{GeBeKr01}
+Georghiades, A., Belhumeur, P., and Kriegman, D. (2001).
+\newblock From {F}ew to {M}any: {I}llumination {C}one {M}odels for {F}ace
+  {R}ecognition under {V}ariable {L}ighting and {P}ose.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell.}, 23(6):643--660.
 
-\bibitem[Hubert et~al.(2005)Hubert, Rousseeuw, and Branden]{hubert05}
-M.~Hubert, P.~J. Rousseeuw, and K.~V. Branden.
+\bibitem[Hubert et~al., 2005]{hubert05}
+Hubert, M., Rousseeuw, P.~J., and Branden, K.~V. (2005).
 \newblock {ROBPCA}: {A} {N}ew {A}pproach to {R}obust {P}rincipal {C}omponent
   {A}nalysis.
-\newblock \emph{Technometrics}, 47-1:\penalty0 64--79, 2005.
+\newblock {\em Technometrics}, 47-1:64--79.
 
-\bibitem[Li and Chen(1985)]{LiChen85}
-G.~Li and Z.~Chen.
+\bibitem[Hubert et~al., 2002]{HubertEtal02}
+Hubert, M., Rousseeuw, P.~J., and Verboven, S. (2002).
+\newblock {A Fast Method for Robust Principal Components With Applications to
+  Chemometrics}.
+\newblock {\em Chemom. Intell. Lab. Syst.}, 60:101--111.
+
+\bibitem[Lee et~al., 2005]{KCLee05}
+Lee, K., Ho, J., and Kriegman, D. (2005).
+\newblock {A}cquiring {L}inear {S}ubspaces for {F}ace {R}ecognition under
+  {V}ariable {L}ighting.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell.}, 27(5):684--698.
+
+\bibitem[Li and Chen, 1985]{LiChen85}
+Li, G. and Chen, Z. (1985).
 \newblock {Projection-pursuit approach to robust dispersion matrices and
   principal components: Primary theory and Monte Carlo}.
-\newblock \emph{J. Amer. Statist. Assoc.}, 80\penalty0 (759--766), 1985.
+\newblock {\em J. Amer. Statist. Assoc.}, 80(759--766).
 
-\bibitem[Locantore et~al.(1999)Locantore, Marron, Simpson, Tripoli, Zhang, and
-  Cohen]{LocantoreEtal99}
-N.~Locantore, J.S. Marron, D.G. Simpson, N.~Tripoli, J.T. Zhang, and K.L.
-  Cohen.
+\bibitem[Locantore et~al., 1999]{LocantoreEtal99}
+Locantore, N., Marron, J., Simpson, D., Tripoli, N., Zhang, J., and Cohen, K.
+  (1999).
 \newblock Robust principal components of functional data.
-\newblock \emph{TEST}, 8:\penalty0 1--73, 1999.
+\newblock {\em TEST}, 8:1--73.
 
-\bibitem[Magyar and Tyler(2014)]{magyar14}
-A.F. Magyar and D.E. Tyler.
+\bibitem[Magyar and Tyler, 2014]{magyar14}
+Magyar, A. and Tyler, D. (2014).
 \newblock The asymptotic inadmissibility of the spatial sign covariance matrix
   for elliptically symmetric distributions.
-\newblock \emph{Biometrika}, 101:\penalty0 673--688, 2014.
+\newblock {\em Biometrika}, 101:673--688.
 
-\bibitem[Majumdar and Chatterjee(2015)]{Majumdar15}
-S.~Majumdar and S.~Chatterjee.
+\bibitem[Majumdar and Chatterjee, 2015]{Majumdar15}
+Majumdar, S. and Chatterjee, S. (2015).
 \newblock Robust estimation of principal components from depth-based
   multivariate rank covariance matrix.
-\newblock \url{http://arxiv.org/abs/1502.07042}, 2015.
+\newblock \url{http://arxiv.org/abs/1502.07042}.
 
-\bibitem[Maronna et~al.(2006)Maronna, Martin, and Yohai]{maronna06}
-R.~Maronna, D.~Martin, and V.~Y. Yohai.
-\newblock \emph{Robust {S}tatistics: {T}heory and {M}ethods}.
-\newblock Wiley, New York, NY, 2006.
+\bibitem[Maronna et~al., 2006]{maronna06}
+Maronna, R., Martin, D., and Yohai, V.~Y. (2006).
+\newblock {\em Robust {S}tatistics: {T}heory and {M}ethods}.
+\newblock Wiley, New York, NY.
 
-\bibitem[Maronna et~al.(1976)Maronna, Staehl, and Yohai]{maronna76}
-R.~A. Maronna, W.~A. Staehl, and V.~J. Yohai.
+\bibitem[Maronna and Yohai, 1995]{MaronnaYohai95}
+Maronna, R. and Yohai, V. (1995).
+\newblock {The behavior of the Stahel-Donoho Robust Multivariate Estimator}.
+\newblock {\em J. Amer. Statist. Assoc.}, 90:329--341.
+
+\bibitem[Maronna et~al., 1976]{maronna76}
+Maronna, R.~A., Staehl, W.~A., and Yohai, V.~J. (1976).
 \newblock Bias-{R}obust {E}stimators of {M}ultivariate {S}catter {B}ased on
   {P}rojections.
-\newblock \emph{J. Mult. Anal.}, 42:\penalty0 141--161, 1976.
+\newblock {\em J. Mult. Anal.}, 42:141--161.
 
-\bibitem[Maronna and Yohai(1995)]{MaronnaYohai95}
-R.A. Maronna and V.J. Yohai.
-\newblock {The behavior of the Stahel-Donoho Robust Multivariate Estimator}.
-\newblock \emph{J. Amer. Statist. Assoc.}, 90:\penalty0 329--341, 1995.
-
-\bibitem[M\"{o}tt\"{o}nen and Oja(1995)]{MottonenOja95}
-J.~M\"{o}tt\"{o}nen and H.~Oja.
+\bibitem[M\"{o}tt\"{o}nen and Oja, 1995]{MottonenOja95}
+M\"{o}tt\"{o}nen, J. and Oja, H. (1995).
 \newblock Multivariate spatial sign and rank methods.
-\newblock \emph{J. Nonparametric Stat.}, 1995.
+\newblock {\em J. Nonparametric Stat.}
 
-\bibitem[Rousseeuw(1985)]{rousseeuw85}
-P.~Rousseeuw.
+\bibitem[Qiu et~al., 2004]{Qiuetal04}
+Qiu, F., Berglund, J., Jensen, J.~R., Thakkar, P., and Ren, D. (2004).
+\newblock Speckle {N}oise {R}eduction in {SAR} {I}magery {U}sing a {L}ocal
+  {A}daptive {M}edian {F}ilter.
+\newblock {\em GISci. Remote Sens.}, 41(3):244--266.
+
+\bibitem[Rousseeuw, 1985]{rousseeuw85}
+Rousseeuw, P. (1985).
 \newblock Multivariate estimation with high breakdown point.
-\newblock In \emph{Mathematical Statistics and Applications, Volume B (Proc.
-  4th Pannonian Symp. Math. Statist., Bad Tatzmannsdorf, 1983)}, pages 283--97,
-  Dordrecht, 1985. D. Reidel.
+\newblock In {\em Mathematical Statistics and Applications, Volume B (Proc. 4th
+  Pannonian Symp. Math. Statist., Bad Tatzmannsdorf, 1983)}, pages 283--97,
+  Dordrecht. D. Reidel.
 
-\bibitem[Rousseeuw(1984)]{Rousseeuw84}
-P.~J. Rousseeuw.
+\bibitem[Rousseeuw, 1984]{Rousseeuw84}
+Rousseeuw, P.~J. (1984).
 \newblock {Least Median of Squares Regression}.
-\newblock \emph{J. Amer. Statist. Assoc.}, 79:\penalty0 871--880, 1984.
+\newblock {\em J. Amer. Statist. Assoc.}, 79:871--880.
 
-\bibitem[Shang et~al.(2014)Shang, Liu, Cheng, and Cheng]{ShangEtal14}
-F.~Shang, Y.~Liu, J.~Cheng, and H.~Cheng.
+\bibitem[Shang et~al., 2014]{ShangEtal14}
+Shang, F., Liu, Y., Cheng, J., and Cheng, H. (2014).
 \newblock {Robust Principal Component Analysis with Missing Data}.
-\newblock In \emph{Proceedings of the 23rd ACM International Conference on
+\newblock In {\em Proceedings of the 23rd ACM International Conference on
   Conference on Information and Knowledge Management}, {CIKM '14}, pages
-  1149--1158. ACM, 2014.
+  1149--1158. ACM.
 
-\bibitem[Tang and Nehorai(2011)]{TangNehorai11}
-G.~Tang and A.~Nehorai.
+\bibitem[Tang and Nehorai, 2011]{TangNehorai11}
+Tang, G. and Nehorai, A. (2011).
 \newblock Robust principal component analysis based on low-rank and
   block-sparse matrix decomposition.
-\newblock In \emph{2011 45th Annual Conference on Information Sciences and
-  Systems}, pages 1--5, 2011.
+\newblock In {\em 2011 45th Annual Conference on Information Sciences and
+  Systems}, pages 1--5.
 
-\bibitem[Tyler(1987)]{tyler87}
-D.E. Tyler.
+\bibitem[Tyler, 1987]{tyler87}
+Tyler, D. (1987).
 \newblock A distribution-free {M}-estimator of multivariate scatter.
-\newblock \emph{Ann. Statist.}, 15:\penalty0 234--251, 1987.
+\newblock {\em Ann. Statist.}, 15:234--251.
 
-\bibitem[Visuri et~al.(2000)Visuri, Koivunen, and Oja]{visuri00}
-S.~Visuri, V.~Koivunen, and H.~Oja.
+\bibitem[Visuri et~al., 2000]{visuri00}
+Visuri, S., Koivunen, V., and Oja, H. (2000).
 \newblock Sign and rank covariance matrices.
-\newblock \emph{J. Statist. Plan. Inf.}, 91:\penalty0 557--575, 2000.
+\newblock {\em J. Statist. Plan. Inf.}, 91:557--575.
 
-\bibitem[Wohlberg et~al.(2012)Wohlberg, Chartrand, and Theiler]{WohlbergEtal12}
-B.~Wohlberg, R.~Chartrand, and J.~Theiler.
+\bibitem[Wohlberg et~al., 2012]{WohlbergEtal12}
+Wohlberg, B., Chartrand, R., and Theiler, J. (2012).
 \newblock Local principal component pursuit for nonlinear datasets.
-\newblock In \emph{2012 IEEE International Conference on Acoustics, Speech and
-  Signal Processing (ICASSP)}, pages 3925--3928, 2012.
+\newblock In {\em 2012 IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}, pages 3925--3928.
 
-\bibitem[Xie et~al.(1993)Xie, Wang, Liang, Sun, Song, and Yu]{XieEtal93}
-Y.-L. Xie, J.-H. Wang, Y.-Z. Liang, L.-X. Sun, X.-H. Song, and R.-Q. Yu.
+\bibitem[Xie et~al., 1993]{XieEtal93}
+Xie, Y.-L., Wang, J.-H., Liang, Y.-Z., Sun, L.-X., Song, X.-H., and Yu, R.-Q.
+  (1993).
 \newblock Robust principal component analysis by projection pursuit.
-\newblock \emph{J. Chemom.}, 7:\penalty0 527--541, 1993.
+\newblock {\em J. Chemom.}, 7:527--541.
 
-\bibitem[Zhou et~al.(2010)Zhou, Li, Wright, Cand\'es, and Ma]{ZhouEtal10}
-Z.~Zhou, X.~Li, J.~Wright, E.~J. Cand\'es, and Y.~Ma.
+\bibitem[Zhao et~al., 2014]{ZhaoEtal14}
+Zhao, Q., Meng, D., Xu, Z., Zuo, W., and Zhang, L. (2014).
+\newblock Robust principal component analysis with complex noise.
+\newblock In {\em Proc. of the 31st Int. Conf. on Machine Learning, Beijing,
+  China, 21–26 June 2014}.
+
+\bibitem[Zhou et~al., 2010]{ZhouEtal10}
+Zhou, Z., Li, X., Wright, J., Cand\'es, E.~J., and Ma, Y. (2010).
 \newblock Stable principal component pursuit.
-\newblock In \emph{2010 IEEE International Symposium on Information Theory
-  Proceedings}, pages 1518--1522, 2010.
+\newblock In {\em 2010 IEEE International Symposium on Information Theory
+  Proceedings}, pages 1518--1522.
 
-\bibitem[Zuo and Cui(2005)]{ZuoCui05}
-Y.~Zuo and M.~Cui.
+\bibitem[Zuo and Cui, 2005]{ZuoCui05}
+Zuo, Y. and Cui, M. (2005).
 \newblock Depth weighted scatter estimators.
-\newblock \emph{Ann. Statist.}, 33-1:\penalty0 381--413, 2005.
+\newblock {\em Ann. Statist.}, 33-1:381--413.
 
-\bibitem[Zuo and Serfling(2000)]{zuo00}
-Y.~Zuo and R.~Serfling.
+\bibitem[Zuo and Serfling, 2000]{zuo00}
+Zuo, Y. and Serfling, R. (2000).
 \newblock General notions of statistical depth functions.
-\newblock \emph{Ann. Statist.}, 28-2:\penalty0 461--482, 2000.
+\newblock {\em Ann. Statist.}, 28-2:461--482.
 
 \end{thebibliography}

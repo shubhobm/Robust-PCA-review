@@ -64,8 +64,10 @@ When $\bfx$ is a random sample from an elliptical distribution, the sign transfo
 \begin{figure}[t]
 \centering
 \includegraphics[width=\textwidth]{allthree}
-\caption{allthree}
-\label{fig1:allthree}
+	\caption{(Left) 1000 points randomly drawn from $\mathcal N_2\left((0,0)^T, \left(\protect\begin{smallmatrix} 5 & -4 \\ -4 & 5 \protect\end{smallmatrix}\right)\right) $ (in black), and three outliers (in red);\\
+(Center) their spatial signs: all points reside on the surface of a finite ball in $\BR^2$;\\
+(Right) their multivariate ranks based on halfspace depth: retains the shape of the data.}
+	\label{fig1:allthree}
 \end{figure}
 
 There are two components of a multivariate data point: its direction and magnitude. Spatial sign discards the magnitude and only uses the direction. Consequently, although the sign transformation provides an intuitively simple way of robustly estimating population eigenvectors, the estimates are not very accurate in terms of asymptotic and finite-sample efficiencies \citep{Majumdar15}. In fact, \cite{magyar14} showed that the eigenvectors of the M-estimate of scatter proposed by \cite{tyler87} have uniformly lower asymptotic risk than those obtained from the SCM.
@@ -83,9 +85,9 @@ Aside from obtaining a lower dimensional projection of the data matrix $\bfX$ in
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=.33\textwidth]{ROBPCA_plot}
-\caption{allthree}
-\label{fig:figROBPCA}
+\includegraphics[width=.6\textwidth]{ROBPCA}
+	\caption{Four different types of points in 3-dimensional data with respect to a 2-PC subspace: $A$ and $B$ are regular observations, $C$ is a good leverage point, $D$ is an orthogonal outlier, and $E$ is a bad leverage point.}
+	\label{fig:figROBPCA}
 \end{figure}
 
 We illustrate this in Figure~\ref{fig:figROBPCA}. Here we consider data in 3 dimensions, and consider the relative position of samples with respect to the two-dimensional principal component subspace $\cM$. We can classify such points into four categories:

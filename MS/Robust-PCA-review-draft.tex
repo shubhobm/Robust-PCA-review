@@ -55,6 +55,17 @@
 \hypersetup{ colorlinks = true, citecolor = black, urlcolor = blue}
 %\usepackage[nolists, nomarkers, figuresfirst]{endfloat}
 
+%% For pstricks
+\usepackage[pdf]{pstricks}
+\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
+\usepackage[space]{grffile} % For spaces in paths
+\usepackage{etoolbox} % For spaces in paths
+\makeatletter % For spaces in paths
+\patchcmd\Gread@eps{\@inputcheck#1 }{\@inputcheck"#1"\relax}{}{}
+\makeatother
+
 \definecolor{background-color}{gray}{0.98}
 
 \title{Robust Principal Component Analysis: a Review}

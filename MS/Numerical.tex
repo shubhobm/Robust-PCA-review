@@ -3,6 +3,8 @@
 
 In this section we present two data analytical scenarios to demonstrate the comparative performance and applicability of the different approaches of robust PCA we have discussed.
 
+{\colrbf 1 more line}
+
 \subsection*{\sffamily \large Bus data}
 Available in the R package \texttt{rrcov}, this dataset consists of the measurements of 18 image features for 218 buses. Following a similar analysis in \cite{maronna06}, pp. 213, we set aside variable 9 and scale the other variables by dividing with their respective median absolute deviations (MAD). We do this done because all the variables had much larger standard deviations compared to their MADs, and variable 9 had MAD = 0. Following this, we compare the performances of the classical PCA (CPCA), PCA based on the eigenvector estimate from the MCD covariance matrix (MPCA), spatial sign-based PCA (SPCA), depth-based weighted sign PCA (DPCA), ROBPCA, and PCP.
 We use projection depth as our choice of depth function while doing DPCA.
@@ -48,6 +50,7 @@ For all classical PCA methods, we set the number of PCs at 3. We compare the abo
 \end{table}
 
 \subsection*{\sffamily \large Image denoising}
+In this example we take the pixel matrices from four image files: the Lenna image, and three images from the extended Yale Face Database B \citep{GeBeKr01,KCLee05} (fifth images for individuals 1, 2 and 28), add noise to some pixels and attempt to recover the original images using robust PCA techniques. As mentioned before, a major area of application of robust PCA, and PCA in general, is to extract the underlying low-rank structure in image recognition problems that are often high-dimensional in nature. Although PCP was designed keeping this very generative model (i.e. (\ref{eqn:PCPmodel})) in mind, \cite{ZhaoEtal14} showed that even the classical PCA performs fairly well in comparison of low-rank-plus-sparse methods to remove certain types of noise from an image, as well as background subtraction of videos.
 
 \begin{figure}[t]
 \centering
@@ -55,3 +58,5 @@ For all classical PCA methods, we set the number of PCs at 3. We compare the abo
 \caption{Denoising results of four images. Left to right in a row indicates the original image, image with noise added, and denoising by DPCA, ROBPCA and PCP, respectively.}
 \label{fig:figDenoise}
 \end{figure}
+
+We first resize our images: the lenna image from $128 \times 128$ to $96 \times 96$ and the Yale images from $192 \times 168$ to $96 \times 84$. After this we randomly select 10\% of the pixels from each image and turn their values to 0 or 1 with probability 0.5. Such noise occurs naturally in image recognition problems, and degrades image quality as well as the performance of image classification algorithms \citep{Qiuetal04}. Following this we center and scale each of these matrices of pixel values and apply DPCA, ROBPCA and PCP on them. We take the top 10 estimated PCs for DPCA and ROBPCA to reconstruct the images. Figure~\ref{fig:figDenoise} gives the results obtained from each of these methods. The first and second images in each row denote the original image with and without speckle noise, while the others give denoised versions from the three methods. PCP has the best performance: it recovers the faces almost perfectly, and does better than the other two methods for the Lenna image. The structure in the data seem to have affected the performance of DPCA and ROBPCA, which retain some of the noise in the reconstructed versions. Using a larger number of PCs retains the noises as well. Finally, the performance of all methods suffer when they are applied on the Lenna image, which is a relatively complex image.
