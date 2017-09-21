@@ -3,15 +3,9 @@
 
 \subsection*{\sffamily \large Robust covariance matrices, projection pursuit}
 
-The earliest approaches to robust PCA were based on robustly estimating the population covariance matrix, and using eigenvectors of that estimate as principal components. Some methods of robust covariance matrix estimation include the Minimum Volume Ellipsoid estimator \citep{Rousseeuw84}, a projection-based estimator by \citep{maronna76}, the Minimum Covariance Determinant (MCD) estimator \citep{rousseeuw85} and the Stael-Donoho estimators \citep{MaronnaYohai95,ZuoCui05}. Although these estimators have high breakdown points, they suffered from two severe drawbacks. Firstly the explicit evaluation of the population covariance matrix meant that obtaining principal components were not possible when $n < p$. Secondly, even when $n > p$, these methods become computationally intensive with large data dimensions.
+The early and by now well-established approaches to robust PCA were based on robustly estimating the population covariance matrix, and using eigenvectors of that estimate as principal components. Some methods of robust covariance matrix estimation include a projection-based estimator by \cite{maronna76}, the Minimum Volume Ellipsoid estimator \citep{Rousseeuw84},  the Minimum Covariance Determinant (MCD) estimator \citep{rousseeuw85} and the Stael-Donoho estimators \citep{MaronnaYohai95,ZuoCui05}. Although these methods have high breakdown points, they are not entirely suitable for many modern applications where one or more of $n$ and $p$ can be large, and $n < p$ is not uncommon. They typically require computation of the entire covariance matrix, which is not possible when $n < p$. Even when $n > p$, these methods become computationally intensive with large data dimensions.
 
-\cite{LiChen85} first introduced the idea of Projection Pursuit (PP) in robust PCA to alleviate these problems. Notice that the case for $k=1$ in (\ref{eqn:eqnPCA}) can be rewritten as
-%
-$$
-\bfw_1 = \argmax_{\| \bfw \| = 1} Var (\bfX \bfw)
-$$
-%
-The proposal of \cite{LiChen85} was to simply use a robust univariate scale estimator $s_n$ (e.g. median, MCD) to obtain the robust PCs from a size $n$ sample $\bfX = (\bfx_1, \ldots, \bfx_n)$:
+\cite{LiChen85} introduced the idea of Projection Pursuit (PP) in robust PCA to alleviate these problems. They proposed to replace the variances in (\ref{eqn:eqnPCA1}) and (\ref{eqn:eqnPCAk}) by a robust univariate scale estimator $s_n$ (e.g. median, MCD), and obtain the robust PCs from a size $n$ sample $\bfX = (\bfx_1, \ldots, \bfx_n)$:
 %
 \begin{align*}
 \hat \bfw_1^\text{PP} &= \argmax_{\| \bfw \| = 1} s_n ( \bfw^T \bfx_1, \ldots, \bfw^T \bfx_n );\\
@@ -36,7 +30,7 @@ $$
 O(\bfz_i) = \max_{\bfv \in B} \frac{| \bfz_i^T \bfv - m_n (\bfz_j^T \bfv)|}{s_n (\bfz_j^T \bfv )}
 $$
 %
-where $m_n$ and $s_n$ are robust location and scale estimators, respectively. When $\binom{n}{2} < 250$, $B$ is the set of vectors passing through all possible pairs of sample points, and is a collection of 250 randomly chosen non-zero vectors in $\BR^{r}$ otherwise.
+where $m_n$ and $s_n$ are robust location and scale estimators, respectively. The set of vectors $B$ is taken as the vectors passing through all possible pairs of sample points if $\binom{n}{2} < 250$, and a collection of 250 randomly chosen non-zero vectors in $\BR^{r}$ otherwise.
 
 Use the top $k$ PCs calculated from the $h$ least outlying points ($k \leq r; k, h$ suitably chosen) to transform the data again:
 %
@@ -53,10 +47,10 @@ As \cite{hubert05} showed through application on simulated and real data, the co
 
 \subsection*{\sffamily \large Data transformation and M-estimation}
 
-A parallel approach towards robust PCA has also been developed by researchers, that is focused on the usage of robust transformations on the data, specifically multivariate signs and ranks, and related $M$-estimates of scatter. First introduced by \cite{MottonenOja95}, the multivariate sign or \textit{spatial sign} of a vector $\bfx \in \BR^p$ with respect to a location parameter $\bfmu \in \BR^p$ is defined as:
+A parallel approach towards robust PCA has also been developed by researchers, that is focused on the usage of robust transformations on the data, specifically multivariate signs and ranks, and related $M$-estimates of scatter. Introduced by \cite{MottonenOja95}, the multivariate sign or \textit{spatial sign} of a vector $\bfx \in \BR^p$ with respect to a location parameter $\bfmu \in \BR^p$ is defined as:
 %
 $$
-\bfS (\bfx) = \frac{\bfx  - \bfmu }{\| \bfx - \bfmu\|} \BI_{\bfx \neq \bfmu}
+\bfS (\bfx) = \frac{\bfx  - \bfmu }{\| \bfx - \bfmu\|} \BI_{ \{ \bfx \neq \bfmu \} }
 $$
 %
 When $\bfx$ is a random sample from an elliptical distribution, the sign transformation keeps the population eigenvectors constant. Since all vectors in the same direction get mapped to the same spatial sign regardless of their magnitude, eigenvector estimates calculated from the Sign Covariance Matrix (SCM), or equivalently the SVD of a sign transformed data matrix can act as robust PCs \citep{LocantoreEtal99,visuri00}.

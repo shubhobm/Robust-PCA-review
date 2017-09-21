@@ -1,10 +1,33 @@
 \begin{thebibliography}{}
 
+\bibitem[Alexander, 2008]{AlexanderBook}
+Alexander, C. (2008).
+\newblock {\em Market Risk Analysis Volume III, Pricing, Hedging and Trading
+  Financial Instruments}.
+\newblock Wiley.
+
+\bibitem[Alkandari and Aljaber, 2015]{AlkandariAljaber15}
+Alkandari, A. and Aljaber, S.~J. (2015).
+\newblock {Principle Component Analysis algorithm (PCA) for image recognition}.
+\newblock In {\em 2015 Second International Conference on Computing Technology
+  and Information Management (ICCTIM)}, pages 76--80.
+
+\bibitem[Bailey, 2012]{Bailey12}
+Bailey, S. (2012).
+\newblock {Principal Component Analysis with Noisy and/or Missing Data}.
+\newblock {\em Publ. Astron. Soc. Pac.}, 124:1015--1023.
+
 \bibitem[Becker et~al., 2011]{BeckerEtal11}
 Becker, S., Cand\'es, E.~J., and Grant, M. (2011).
 \newblock {TFOCS: flexible first-order methods for rank minimization}.
 \newblock In {\em Low-rank Matrix Optimization Symposium, SIAM Conference on
   Optimization}.
+
+\bibitem[Berry and Castellanos, 2007]{BerryCastellanos}
+Berry, M.~W. and Castellanos, M. (2007).
+\newblock {\em Survey of Text Mining II: Clustering, Classification, and
+  Retrieval}.
+\newblock Springer.
 
 \bibitem[Bouwmans and Zahzah, 2014]{Bouwmans14}
 Bouwmans, T. and Zahzah, E.~H. (2014).
@@ -34,6 +57,11 @@ Georghiades, A., Belhumeur, P., and Kriegman, D. (2001).
 \newblock From {F}ew to {M}any: {I}llumination {C}one {M}odels for {F}ace
   {R}ecognition under {V}ariable {L}ighting and {P}ose.
 \newblock {\em IEEE Trans. Pattern Anal. Mach. Intell.}, 23(6):643--660.
+
+\bibitem[Hellton and Thoresen, 2014]{HelltonThoresen14}
+Hellton, K.~H. and Thoresen, M. (2014).
+\newblock {The Impact of Measurement Error on Principal Component Analysis}.
+\newblock {\em Scand. J. Stat.}, 41:1051--1063.
 
 \bibitem[Hubert et~al., 2005]{hubert05}
 Hubert, M., Rousseeuw, P.~J., and Branden, K.~V. (2005).
@@ -77,6 +105,11 @@ Majumdar, S. and Chatterjee, S. (2015).
   multivariate rank covariance matrix.
 \newblock \url{http://arxiv.org/abs/1502.07042}.
 
+\bibitem[Mardia et~al., 1979]{MardiaKentBibby}
+Mardia, K.~V., Kent, J.~T., and Bibby, J.~M. (1979).
+\newblock {\em Multivariate Analysis}.
+\newblock Academic Press Inc, first edition.
+
 \bibitem[Maronna et~al., 2006]{maronna06}
 Maronna, R., Martin, D., and Yohai, V.~Y. (2006).
 \newblock {\em Robust {S}tatistics: {T}heory and {M}ethods}.
@@ -116,6 +149,12 @@ Rousseeuw, P.~J. (1984).
 \newblock {Least Median of Squares Regression}.
 \newblock {\em J. Amer. Statist. Assoc.}, 79:871--880.
 
+\bibitem[Saha et~al., 2016]{SahaEtal16}
+Saha, P., Roy, N., Mukherjee, D., and Sarkar, A.~K. (2016).
+\newblock {Application of Principal Component Analysis for Outlier Detection in
+  Heterogeneous Traffic Data}.
+\newblock {\em Procedia Comput. Sc.}, 83:107--114.
+
 \bibitem[Shang et~al., 2014]{ShangEtal14}
 Shang, F., Liu, Y., Cheng, J., and Cheng, H. (2014).
 \newblock {Robust Principal Component Analysis with Missing Data}.
@@ -140,6 +179,11 @@ Visuri, S., Koivunen, V., and Oja, H. (2000).
 \newblock Sign and rank covariance matrices.
 \newblock {\em J. Statist. Plan. Inf.}, 91:557--575.
 
+\bibitem[Wilks, 2011]{WilksBook}
+Wilks, D. (2011).
+\newblock {\em Statistical Methods in the Atmospheric Sciences}, volume 100.
+\newblock Academic Press, third edition.
+
 \bibitem[Wohlberg et~al., 2012]{WohlbergEtal12}
 Wohlberg, B., Chartrand, R., and Theiler, J. (2012).
 \newblock Local principal component pursuit for nonlinear datasets.
@@ -151,6 +195,11 @@ Xie, Y.-L., Wang, J.-H., Liang, Y.-Z., Sun, L.-X., Song, X.-H., and Yu, R.-Q.
   (1993).
 \newblock Robust principal component analysis by projection pursuit.
 \newblock {\em J. Chemom.}, 7:527--541.
+
+\bibitem[Xu et~al., 2013]{XuCaramanisMannor13}
+Xu, H., Caramanis, C., and Mannor, S. (2013).
+\newblock {Outlier-Robust PCA: The High-Dimensional Case}.
+\newblock {\em IEEE Trans. Inf. Theory}, 59:546--572.
 
 \bibitem[Zhao et~al., 2014]{ZhaoEtal14}
 Zhao, Q., Meng, D., Xu, Z., Zuo, W., and Zhang, L. (2014).
