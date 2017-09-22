@@ -1,15 +1,15 @@
 \section*{\sffamily \Large PRINCIPAL COMPONENT PURSUIT}
 \label{section:sec3}
 
-The above notion of outliers depends on the fact that the $n \times p$ data matrix $\bfX$ is composed of observations from several independent samples in its rows, and some of these samples have corrupted observations. However, in many practical situations, rows of $\bfX$ might not be independent, the corrupted observations can have a pattern across samples, or both. For example in face or handwriting recognition, each individual picture can be taken as a data matrix. The value of a pixel takes corresponds to an entry in the data matrix, with noisy pixels denoting corrupted measurements. Although the underlying low-rank structure is still of interest in such situations, for example the face of a person or a handwritten digit, this problem is fundamentally different because of the inherent structure present in the data.
+The above notion of outliers depends on the fact that the $n \times p$ data matrix $\bfX$ is composed of observations from several independent samples in its rows, and some of these samples have corrupted observations. However, in many practical situations, rows of $\bfX$ might not be independent, the corrupted observations can have a pattern across samples, or both. For example in face or handwriting recognition, each individual picture can be taken as a data matrix. The value of a pixel takes corresponds to an entry in the data matrix, with noisy pixels denoting corrupted measurements. Although the underlying low-rank structure is still of interest in such situations, for example the face of a person or a handwritten digit, this problem is fundamentally different because of the inherent structure present in the data \citep{AlkandariAljaber15}. On the other hand, data from video surveillance consists of moving objects in front of a background that is largely static across frames. In such a situation, accurately decomposing a frame in real-time into the low-rank background image and the localized foreground pixels is of practical interest \citep{BouwmansBook,Bouwmans14}.
 
-\cite{CandesEtal09} first introduced {\it Principal Component Pursuit} (PCP), which decomposes the data matrix into low-rank and sparse components to tackle the above situation. Formally, PCP considers the following additive model:
+\cite{CandesEtal09} introduced the {\it Principal Component Pursuit} (PCP), which decomposes the data matrix into low-rank and sparse components to tackle the above situations. Formally, PCP considers the following additive model:
 %
 \begin{align}\label{eqn:PCPmodel}
 \bfX = \bfL_0 + \bfS_0
 \end{align}
 %
-with rank$(\bfL_0) = r < p$ and $\bfS_0$ sparse. The low-rank and sparse structures are recovered using nuclear norm penalization on the first component and $\ell_1$-norm penalization on the second component, respectively:
+with rank$(\bfL_0) = r < p$ and $\bfS_0$ sparse. The low-rank and sparse structures are recovered using the following optimization setup:
 %
 \begin{align}\label{eqn:PCPobj}
 & \text{minimize } \| \bfL \|_* + \lambda \| \bfS \|_1; \quad \text{subject to } \bfL + \bfS = \bfX
@@ -18,23 +18,23 @@ with rank$(\bfL_0) = r < p$ and $\bfS_0$ sparse. The low-rank and sparse structu
 where $\|.\|_*$ denotes the nuclear norm of a matrix, i.e. sum of its singular values, and $\|.\|_1$ denotes $\ell_1$-norm, i.e. sum of the absolute values of its entries, and $\lambda $ is a tuning parameter that determines the amount of sparsity permitted in $\bfS$. \cite{CandesEtal09} proved that given the true underlying structure is indeed low-rank-plus-sparse, i.e. adheres to the decomposition in (\ref{eqn:PCPmodel}), a polynomial time algorithm based on convex programming can exactly recover these matrices, and this is possible for arbitrary magnitudes of entries in the sparse component.
 
 \subsection*{\sffamily \large PCP and matrix completion}
-Both the polynomial time algorithm and arbitrary magnitude of corrupted entries are strengths of PCP over traditional methods of robust PCA. Another reason the PCP is attractive by itself is because with slight modifications, it can perform robust matrix completion. The matrix completion problem attempts to fill in a data matrix $\bfY$ through nuclear norm minimization when only a subset $\Omega \subset \{ 1, \ldots, n\} \times \{ 1, \ldots, p\}$ of its entries are observed. Formally stated, the problem amounts to
+Both the polynomial time algorithm and the ability to handle corrupted entries of arbitrary magnitude are strengths of PCP over traditional methods of robust PCA. Another reason the PCP is attractive by itself is because with slight modifications, it can perform robust matrix completion. Matrix completion is the problem of filling in missing entries in a data matrix, and has several real-world applications: most prominently in recommender systems \citep{CandesTao10} and also in genomic data integration \citep{CaiEtal16}. When only a subset $\Omega \subset \{ 1, \ldots, n\} \times \{ 1, \ldots, p\}$ of the entries in the data matrix $\bfY$ are observed, the matrix completion algorithm seeks to find out a completed matrix through nuclear norm minimization. Formally stated, this amounts to
 %
 $$
 \text{minimize } \| \bfL \|_*; \quad \text{ subject to } \bfP_\Omega \bfL = \bfY
 $$
 %
-where $\bfP_\Omega$ is the known indicator matrix of non-missing entries: $(\bfP_\Omega)_{ij} = \BI_{(i,j) \in \Omega}$. PCP simply assumes there is a sparse noise component in the incomplete data: $\bfY = \bfP_\Omega (\bfL_0 + \bfS_0)$, and recovers the low-rank structure:
+where $\bfP_\Omega$ is the known indicator matrix of non-missing entries: $(\bfP_\Omega)_{ij} = \BI \{(i,j) \in \Omega \}$. PCP assumes there is a sparse noise component in the incomplete data: $\bfY = \bfP_\Omega (\bfL_0 + \bfS_0)$, and recovers the low-rank structure:
 %
 \begin{align}\label{eqn:PCPMCobj}
 & \text{minimize } \| \bfL \|_* + \lambda \| \bfS \|_1; \quad \text{subject to } \bfP_\Omega(\bfL + \bfS) = \bfY
 \end{align}
 %
 
-\cite{CandesEtal09} showed that it is possible to solve this problem with minimal modifications to their original PCP algorithm that solves (\ref{eqn:PCPobj}). Multiple further studies provided improvements for several aspects of this basic setup. The work of \cite{ChenEtal11} is prominent among them. In particular, they assumed the presence of both errors and missing entries, with deterministic or random support for each of them, and provided theoretical performance guarantees when the fraction of observed entries vanishes as $n \rightarrow \infty$. They also performed worst-case analysis for the errors-only or missing-only scenarios.
+\cite{CandesEtal09} showed that it is possible to solve this problem with minimal modifications to their original PCP algorithm that solves (\ref{eqn:PCPobj}). Multiple further studies provided improvements on several aspects of this basic setup. The work of \cite{ChenEtal11} is prominent among them. In particular, they assumed the presence of both errors and missing entries, with deterministic or random support for each of them, and provided theoretical performance guarantees when the fraction of observed entries vanishes as $n \rightarrow \infty$. They also performed worst-case analysis for the errors-only or missing-only scenarios.
 
 \subsection*{\sffamily \large Modifications}
-In a subsequent paper, \cite{ZhouEtal10} added an entrywise noise component $\bfZ$ to the objective functions in (\ref{eqn:PCPobj}):
+In a paper subsequent to \cite{CandesEtal09}, \cite{ZhouEtal10} added an entrywise noise component $\bfZ$ to the objective functions in (\ref{eqn:PCPobj}):
 %
 \begin{align}\label{eqn:PCPobjZ}
 & \text{minimize } \| \bfL \|_* + \lambda \| \bfS \|_1; \quad \text{subject to } \bfL + \bfZ + \bfS = \bfX
@@ -46,4 +46,4 @@ and (\ref{eqn:PCPMCobj}):
 & \text{minimize } \| \bfL \|_* + \lambda \| \bfS \|_1; \quad \text{subject to } \bfP_\Omega(\bfL + \bfZ + \bfS) = \bfY
 \end{align}
 %
-This brought the PCP formulation closer to the classical robust PCA setup that separates a lower-dimensional component in presence of both data-wide additional noise and corrupted entries, with the advantage that here the magnitude and structure of corrupted entries can be arbitrary. Further modifications of PCP include the case when the lower-dimensional component is a union of multiple lower dimensional subspaces \citep{WohlbergEtal12}, adding an $\ell_1/\ell_2$-penalization term on $\bfL$ \citep{TangNehorai11}, a dual formulation of the problem \citep{BeckerEtal11}, and non-convex robust matrix completion \citep{ShangEtal14}. PCP has been an active area of research in the signal and image processing community for the past few years. Further details on modifications of the PCP, algorithmic developments, and its applications in video surveillance can be found in \cite{Bouwmans14}.
+This brought the PCP formulation closer to the classical robust PCA setup that separates a lower-dimensional component in presence of both data-wide additional noise and corrupted entries, with the advantage that here the magnitude and structure of corrupted entries can be arbitrary. Further modifications of PCP include a dual formulation of the problem \citep{BeckerEtal11}, adding an $\ell_1/\ell_2$-penalization term on $\bfL$ \citep{TangNehorai11}, the case when the low dimension component is a union of multiple lower dimensional subspaces \citep{WohlbergEtal12}, and non-convex robust matrix completion \citep{ShangEtal14}. PCP has been an active area of research in the signal and image processing community for the past few years. Further details on modifications of the PCP, algorithmic developments, and its applications in video surveillance can be found in \cite{Bouwmans14}.

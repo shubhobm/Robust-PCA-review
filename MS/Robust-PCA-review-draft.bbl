@@ -29,16 +29,39 @@ Berry, M.~W. and Castellanos, M. (2007).
   Retrieval}.
 \newblock Springer.
 
+\bibitem[Bouwmans et~al., 2014]{BouwmansBook}
+Bouwmans, T., Porikli, F., {H\"oferlin}, B., and Vacavant, A. (2014).
+\newblock {\em {Background Modeling and Foreground Detection for Video
+  Surveillance}}.
+\newblock CRC Press, Boca Raton, FL.
+
 \bibitem[Bouwmans and Zahzah, 2014]{Bouwmans14}
 Bouwmans, T. and Zahzah, E.~H. (2014).
 \newblock {Robust PCA via Principal Component Pursuit: A review for a
   comparative evaluation in video surveillance}.
 \newblock {\em Comput. Vis. Image Underst.}, 122:22--34.
 
+\bibitem[Brown et~al., 2010]{BrownEtal10}
+Brown, R. J.~C., Goddaard, S.~L., and Brown, A.~S. (2010).
+\newblock {Using principal component analysis to detect outliers in ambient air
+  monitoring studies}.
+\newblock {\em Int. J. Environ. An. Ch.}, 90:761--772.
+
+\bibitem[Cai et~al., 2016]{CaiEtal16}
+Cai, T., Cai, T.~T., and Zhang, A. (2016).
+\newblock {Structured Matrix Completion with Applications to Genomic Data
+  Integration}.
+\newblock {\em J. Amer. Statist. Assoc.}, 111:621--633.
+
 \bibitem[Cand\'es et~al., 2009]{CandesEtal09}
 Cand\'es, E.~J., Li, X., Ma, Y., and Wright, J. (2009).
 \newblock Robust principal component analysis?
 \newblock {\em J. ACM}, 58:11.
+
+\bibitem[Candes and Tao, 2010]{CandesTao10}
+Candes, E.~J. and Tao, T. (2010).
+\newblock {The Power of Convex Relaxation: Near-Optimal Matrix Completion}.
+\newblock {\em IEEE Trans. Inf. Theory}, 56:2053--2080.
 
 \bibitem[Chen et~al., 2011]{ChenEtal11}
 Chen, Y., Jalali, A., Sanghavi, S., and Caramanis, C. (2011).
@@ -75,6 +98,12 @@ Hubert, M., Rousseeuw, P.~J., and Verboven, S. (2002).
   Chemometrics}.
 \newblock {\em Chemom. Intell. Lab. Syst.}, 60:101--111.
 
+\bibitem[Jackson and Chen, 2004]{JacksonChen04}
+Jackson, D.~A. and Chen, Y. (2004).
+\newblock {Robust principal component analysis and outlier detection with
+  ecological data}.
+\newblock {\em Environmetrics}, 15:129--139.
+
 \bibitem[Lee et~al., 2005]{KCLee05}
 Lee, K., Ho, J., and Kriegman, D. (2005).
 \newblock {A}cquiring {L}inear {S}ubspaces for {F}ace {R}ecognition under
@@ -85,7 +114,7 @@ Lee, K., Ho, J., and Kriegman, D. (2005).
 Li, G. and Chen, Z. (1985).
 \newblock {Projection-pursuit approach to robust dispersion matrices and
   principal components: Primary theory and Monte Carlo}.
-\newblock {\em J. Amer. Statist. Assoc.}, 80(759--766).
+\newblock {\em J. Amer. Statist. Assoc.}, 80:759--766.
 
 \bibitem[Locantore et~al., 1999]{LocantoreEtal99}
 Locantore, N., Marron, J., Simpson, D., Tripoli, N., Zhang, J., and Cohen, K.
@@ -131,6 +160,13 @@ M\"{o}tt\"{o}nen, J. and Oja, H. (1995).
 \newblock Multivariate spatial sign and rank methods.
 \newblock {\em J. Nonparametric Stat.}
 
+\bibitem[Pascoal et~al., 2010]{PascoalEtal10}
+Pascoal, C., Oliveira, M.~R., Pacheco, A., and Valadas, R. (2010).
+\newblock Detection of outliers using robust principal component analysis: A
+  simulation study.
+\newblock In {\em Combining Soft Computing and Statistical Methods in Data
+  Analysis}, pages 499--507.
+
 \bibitem[Qiu et~al., 2004]{Qiuetal04}
 Qiu, F., Berglund, J., Jensen, J.~R., Thakkar, P., and Ren, D. (2004).
 \newblock Speckle {N}oise {R}eduction in {SAR} {I}magery {U}sing a {L}ocal
@@ -161,6 +197,13 @@ Shang, F., Liu, Y., Cheng, J., and Cheng, H. (2014).
 \newblock In {\em Proceedings of the 23rd ACM International Conference on
   Conference on Information and Knowledge Management}, {CIKM '14}, pages
   1149--1158. ACM.
+
+\bibitem[Shyu et~al., 2003]{ShyuEtal03}
+Shyu, M.-L., Chen, S.-C., Sarinnapakorn, K., and Chang, L.~W. (2003).
+\newblock {A Novel Anomaly Detection Scheme Based on Principal Component
+  Classifier}.
+\newblock In {\em ICDM Foundation and New Direction of Data Mining workshop},
+  pages 172--179.
 
 \bibitem[Tang and Nehorai, 2011]{TangNehorai11}
 Tang, G. and Nehorai, A. (2011).
