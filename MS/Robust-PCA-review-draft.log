@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.9)  22 SEP 2017 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.9)  9 OCT 2017 20:12
 entering extended mode
 **./Robust-PCA-review-draft.tex
 (Robust-PCA-review-draft.tex
@@ -683,22 +683,19 @@ Non-PDF special ignored!{C:/Users/Subho/AppData/Local/MiKTeX/2.9/pdftex/config/
 pdftex.map}] (Introduction.tex [2
 
 
-]) (RobustCov.tex [3]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
- [4]
-<allthree.pdf, id=135, 578.16pt x 216.81pt>
+]) (RobustCov.tex [3] [4] [5]
+<allthree.pdf, id=146, 578.16pt x 216.81pt>
 File: allthree.pdf Graphic file (type pdf)
  <use allthree.pdf>
 Package pdftex.def Info: allthree.pdf used on input line 60.
 (pdftex.def)             Requested size: 469.75499pt x 176.15768pt.
- [5]
+
 Overfull \hbox (0.49707pt too wide) in paragraph at lines 69--71
 [][][]\OT1/cmr/m/n/12 Majumdar and Chat-ter-jee[][] ([][]2015[][]) rec-ti-fied 
 this by weight-ing the spa-tial signs by a bounded
  []
 
-[6 <./allthree.pdf>] <ROBPCA.pdf, id=187, 325.48601pt x 191.68614pt>
+[6 <./allthree.pdf>] <ROBPCA.pdf, id=189, 325.48601pt x 191.68614pt>
 File: ROBPCA.pdf Graphic file (type pdf)
 
 <use ROBPCA.pdf>
@@ -711,15 +708,15 @@ File: all_denoise.png Graphic file (type png)
 <use all_denoise.png>
 Package pdftex.def Info: all_denoise.png used on input line 57.
 (pdftex.def)             Requested size: 375.80542pt x 348.97842pt.
-) (Others.tex [13]) (Conclusion.tex)
-(Robust-PCA-review-draft.bbl [14 <./all_denoise.png>] [15] [16] [17] [18]
+) (Others.tex [13] [14 <./all_denoise.png>] [15])
+(Conclusion.tex) (Robust-PCA-review-draft.bbl [16] [17] [18] [19] [20]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no “ in font cmti12!
-)
+ [21])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
 
-[19]
+[22]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
  (Robust-PCA-review-draft.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
@@ -727,16 +724,20 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
 Package rerunfilecheck Info: File `Robust-PCA-review-draft.out' has not changed
 .
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 17361 strings out of 493333
- 286547 string characters out of 3137901
- 436750 words of memory out of 3000000
- 20512 multiletter control sequences out of 15000+200000
+ 17425 strings out of 493333
+ 287628 string characters out of 3137901
+ 437240 words of memory out of 3000000
+ 20555 multiletter control sequences out of 15000+200000
  20292 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,77p,1534b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,77p,1534b,537s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Study/LaTeX/MikTeX 2.9.6161/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:
 /Study/LaTeX/MikTeX 2.9.6161/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Stud
 y/LaTeX/MikTeX 2.9.6161/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/Study/LaTe
@@ -756,9 +757,9 @@ tudy/LaTeX/MikTeX 2.9.6161/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Study/L
 aTeX/MikTeX 2.9.6161/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Study/LaTeX/
 MikTeX 2.9.6161/fonts/type1/public/amsfonts/cm/cmtt12.pfb><D:/Study/LaTeX/MikTe
 X 2.9.6161/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Robust-PCA-review-draft.pdf (19 pages, 530231 bytes).
+Output written on Robust-PCA-review-draft.pdf (22 pages, 553264 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

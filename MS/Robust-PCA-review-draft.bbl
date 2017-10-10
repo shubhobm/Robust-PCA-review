@@ -75,6 +75,21 @@ Croux, C., Flizmoser, P., and Oliviera, M.~R. (2007).
   analysis}.
 \newblock {\em Chemom. Intell. Lab. Syst.}, 87:218--225.
 
+\bibitem[Debruyne et~al., 2010]{DebruyneEtal10}
+Debruyne, M., Hubert, M., and Horebeek, J.~V. (2010).
+\newblock Detecting {I}nfluential {O}bservations in {K}ernel {PCA}.
+\newblock {\em Comput. Stat. Data Anal.}, 54.
+
+\bibitem[Debruyne and Verdonck, 2010]{DeBruyneVerdonck10}
+Debruyne, M. and Verdonck, T. (2010).
+\newblock {Robust kernel principal component analysis and classifcation}.
+\newblock {\em Adv. Data Anal. Classif.}, 4:151--167.
+
+\bibitem[Deng et~al., 2007]{DengEtal07}
+Deng, X., Yuan, M., and Sudjianto, A. (2007).
+\newblock A note on robust kernel principal component analysis.
+\newblock {\em Contemp. Math.}, 443:21--34.
+
 \bibitem[Georghiades et~al., 2001]{GeBeKr01}
 Georghiades, A., Belhumeur, P., and Kriegman, D. (2001).
 \newblock From {F}ew to {M}any: {I}llumination {C}one {M}odels for {F}ace
@@ -85,6 +100,23 @@ Georghiades, A., Belhumeur, P., and Kriegman, D. (2001).
 Hellton, K.~H. and Thoresen, M. (2014).
 \newblock {The Impact of Measurement Error on Principal Component Analysis}.
 \newblock {\em Scand. J. Stat.}, 41:1051--1063.
+
+\bibitem[Hsieh, 2009]{HsiehBook}
+Hsieh, W.~W. (2009).
+\newblock {\em {Machine Learning Methods in the Environmental Sciences: Neural
+  Networks and Kernels}}.
+\newblock Cambridge University Press.
+
+\bibitem[Huang and Reh, 2011]{HuangReh11}
+Huang, H.-H. and Reh, Y.-R. (2011).
+\newblock Neurocomputing.
+\newblock {\em {An iterative algorithm for robust kernel principal component
+  analysis}}, 74:3921--3930.
+
+\bibitem[Huang et~al., 2009]{HuangEtal09}
+Huang, S.~Y., Yeh, Y.~R., and Eguchi, S. (2009).
+\newblock Neural comput.
+\newblock {\em {Robust kernel principal component analysis}}, 21:3179--3213.
 
 \bibitem[Hubert et~al., 2005]{hubert05}
 Hubert, M., Rousseeuw, P.~J., and Branden, K.~V. (2005).
@@ -103,6 +135,18 @@ Jackson, D.~A. and Chen, Y. (2004).
 \newblock {Robust principal component analysis and outlier detection with
   ecological data}.
 \newblock {\em Environmetrics}, 15:129--139.
+
+\bibitem[Kwok and Tsang, 2004]{KwokTsang03}
+Kwok, J.~T. and Tsang, I.~W. (2004).
+\newblock The {P}re-{I}mage {P}roblem in {K}ernel {M}ethods.
+\newblock {\em IEEE Trans. Neural Net.}, 15(6):1517--1525.
+
+\bibitem[Lampart, 2008]{Lampart08}
+Lampart, C.~H. (2008).
+\newblock {Kernel Methods in Computer Vision}.
+\newblock In Curless, B., Freeman, W.~T., and {Van Gool}, L., editors, {\em
+  {Foundations and Trends in Computer Graphics and Vision}}, volume 4 No. 3,
+  pages 193--285. Now Publishers.
 
 \bibitem[Lee et~al., 2005]{KCLee05}
 Lee, K., Ho, J., and Kriegman, D. (2005).
@@ -155,10 +199,26 @@ Maronna, R.~A., Staehl, W.~A., and Yohai, V.~J. (1976).
   {P}rojections.
 \newblock {\em J. Mult. Anal.}, 42:141--161.
 
+\bibitem[Mika et~al., 1999]{Mikaetal99}
+Mika, S., Sch\"{o}lkopf, B., Smola, A., M\"{u}ller, K., Scholz, M., and
+  R\"{a}tsch, G. (1999).
+\newblock {Kernel PCA and De-Noising in Feature Spaces}.
+\newblock {\em Adv. Neural Inf. Process. Syst.}, pages 536--542.
+
 \bibitem[M\"{o}tt\"{o}nen and Oja, 1995]{MottonenOja95}
 M\"{o}tt\"{o}nen, J. and Oja, H. (1995).
 \newblock Multivariate spatial sign and rank methods.
-\newblock {\em J. Nonparametric Stat.}
+\newblock {\em J. Nonparametric Stat.}, 5:201--213.
+
+\bibitem[Mwangi et~al., 2014]{MwangiEtal14}
+Mwangi, B., Tian, T.~S., and Soares, J.~C. (2014).
+\newblock {A Review of Feature Reduction Techniques in Neuroimaging}.
+\newblock {\em Neuroinformatics}, 12:229--244.
+
+\bibitem[Pang et~al., 2010]{PangEtal10}
+Pang, Y.~W., Wang, L., and Yuan, Y. (2010).
+\newblock {Generalized KPCA by adaptive rules in feature space}.
+\newblock {\em Int. J. Comput. Math.}, 87:956--968.
 
 \bibitem[Pascoal et~al., 2010]{PascoalEtal10}
 Pascoal, C., Oliveira, M.~R., Pacheco, A., and Valadas, R. (2010).
@@ -191,6 +251,12 @@ Saha, P., Roy, N., Mukherjee, D., and Sarkar, A.~K. (2016).
   Heterogeneous Traffic Data}.
 \newblock {\em Procedia Comput. Sc.}, 83:107--114.
 
+\bibitem[Sch\"{o}lkopf et~al., 1999]{Scholkopf99}
+Sch\"{o}lkopf, B., Smola, A., and M\"{u}ller, K.-R. (1999).
+\newblock {\em Kernel principal component analysis}, chapter Advances in
+  {K}ernel {M}ethods {S}upport {V}ector {L}earning, pages 327--352.
+\newblock MIT Press.
+
 \bibitem[Shang et~al., 2014]{ShangEtal14}
 Shang, F., Liu, Y., Cheng, J., and Cheng, H. (2014).
 \newblock {Robust Principal Component Analysis with Missing Data}.
@@ -222,6 +288,13 @@ Visuri, S., Koivunen, V., and Oja, H. (2000).
 \newblock Sign and rank covariance matrices.
 \newblock {\em J. Statist. Plan. Inf.}, 91:557--575.
 
+\bibitem[Wang et~al., 2007]{WangEtal07}
+Wang, L., Pang, Y.~W., Shen, D.~Y., and Yu, N.~H. (2007).
+\newblock An iterative algorithm for robust kernel principal component
+  analysis.
+\newblock In {\em Int. Conf. Mach. Learn. Cybern. 2007}, volume~6, pages
+  3484--3489.
+
 \bibitem[Wilks, 2011]{WilksBook}
 Wilks, D. (2011).
 \newblock {\em Statistical Methods in the Atmospheric Sciences}, volume 100.
@@ -243,6 +316,12 @@ Xie, Y.-L., Wang, J.-H., Liang, Y.-Z., Sun, L.-X., Song, X.-H., and Yu, R.-Q.
 Xu, H., Caramanis, C., and Mannor, S. (2013).
 \newblock {Outlier-Robust PCA: The High-Dimensional Case}.
 \newblock {\em IEEE Trans. Inf. Theory}, 59:546--572.
+
+\bibitem[Yang et~al., 1999]{Yangetal14}
+Yang, S., Shen, H., Meng, J., and Shen, Z. (1999).
+\newblock {A Fixed-point Iteration Algorithm for Robust Kernel Principal
+  Component Analysis}.
+\newblock {\em J. Comput. Inf. Syst.}, 10.
 
 \bibitem[Zhao et~al., 2014]{ZhaoEtal14}
 Zhao, Q., Meng, D., Xu, Z., Zuo, W., and Zhang, L. (2014).

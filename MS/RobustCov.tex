@@ -16,7 +16,7 @@ Aside from not having any restrictions for high-dimensional data, the PP approac
 
 The ROBPCA method of \cite{hubert05} combines the above two approaches. Specifically, ROBPCA consists of the following steps:
 %
-\begin{itemize}
+\begin{enumerate}
 \item Do an initial dimension reduction of the data matrix: $\bfX_{n \times p} \mapsto \bfZ_{n \times r}, r \leq p$ by projecting all data points on the subspace formed by the right singular vectors of $\bfX$:
 %
 $$
@@ -41,7 +41,7 @@ $$
 %\item If $s_n (\bfz_j^T \bfv ) = 0$ for some $\bfv$, then all samples are projected onto the hyperplane orthogonal to that $\bfv$ and these projection are taken as the new observations to work with. This optional step potentially reduces data dimension to some $r_1 \leq r_0$. for notational convenience, we still refer to this transformed data as $\bfZ$.
 
 \item Robustly estimate the scatter matrix of $\bfZ^*$, take its eigenvectors as the estimated robust PCs.
-\end{itemize}
+\end{enumerate}
 
 As \cite{hubert05} showed through application on simulated and real data, the combination of a PP approach (first step) and robust scatter matrix estimation (third step) used by ROBPCA results in efficiency gains in estimating population principal components, as well as better detection of outlying points, compared to classical PCA, one of their previously proposed methods \citep{HubertEtal02}, as well as spherical and ellipsoidal PCA \citep{LocantoreEtal99}.
 

@@ -2,5 +2,23 @@
 \label{section:Others}
 
 \subsection*{\sffamily \large Kernel PCA}
+Kernel PCA is prominent among nonlinear methods of dimension reduction, i.e. methods that aim to reduce the dimension of a nonlinear transformation of the data matrix $\bfX$, instead of a linear mapping of it. This is because even though kernel PCA performs linear PCA on the transformed feature space, it is able to do so without using the transformed random variables. Specifically, suppose the transformation map is $\phi: \BR^p \mapsto \cH$, a reproducing kernel Hilbert space (RKHS). Then there exists a {\it kernel function} $K: \BR^p \times \BR^p \mapsto \BR$ that gives the inner product in the transformed space:
+%
+\begin{align}\label{eqn:kernelEqn}
+K( \bfa, \bfb) = \langle \phi(\bfa), \phi(\bfb) \rangle
+\end{align}
+%
+This `kernel trick' enables us to perform PCA on the transformed data $\{ \phi(\bfx_1), \ldots, \phi(\bfx_n) \}$ just by replacing inner products with the kernel function in (\ref{eqn:kernelEqn}) \citep{Scholkopf99}. As a consequence, it is possible to extend methods of linear PCA to their kernel versions. This holds for robust methods as well. Indeed, \cite{DeBruyneVerdonck10,DebruyneEtal10} provided algorithms that extend SPCA, projection pursuit and ROBPCA into kernel spaces, and \cite{Yangetal14,HuangEtal09} and \cite{HuangReh11} used robust loss functions in the kernel version of a reformulation of the classical PCA problem in (\ref{eqn:eqnPCA1}) and (\ref{eqn:eqnPCAk}). \cite{WangEtal07, DengEtal07} and \cite{PangEtal10} proposed more methods that connect robust classical PCA methods to kernel PCA.
+
+Compared to robust linear PCA, robust kernel PCA has an additional step of reverse mapping the principal component projections on the feature space $\cH$ to the input space $\BR^p$. This is important because the areas of application for robust kernel PCA are concerned with the recognition of shapes that are mostly nonlinear in presense of additional noise, for example computer vision \citep{Lampart08}, environmental science \citep{HsiehBook}, and neuroimaging \citep{MwangiEtal14}. An exact pre-image, however, may not always exist \citep{Mikaetal99}, and obtaining an approximate reconstruction is challenging because $\cH$ can be infinite dimensional. \cite{Mikaetal99} first provided a solution of this problem using an iterative algorithm. Later on, \cite{KwokTsang03} provided another method of pre-image reconstruction using multidimensional scaling that results in better recovery in the original data space but does not suffer from the instability issues of \cite{Mikaetal99}.
 
 \subsection*{\sffamily \large Functional PCA}
+For functional data, the matrix $\bfX$ shall correspond to the realizations of a random function, say $f_X$ that takes values in $L^2 (\cI)$, where $\cI$ is a real interval. Following the definition of inner products in the functional space: $ \langle a, b \rangle = \int_\cI a(y) b(y) dy$ for $a,b \in L^2 (\cI)$, one can replace the dot products in (\ref{eqn:eqnPCA1}) and (\ref{eqn:eqnPCAk}) bby these inner products to define functional principal components. Analogous to the real setting, one can define the covariance {\it operator} of $f_X$: $\gamma_X = (f_X - \BE f_X) \otimes (f_X - \BE f_X); a \otimes b: \cH \rightarrow \cH$ so that $((a \otimes b)c = \langle b,c \rangle a$. Following this, $f_X$ has the Karhunen-Lo\'{e}ven expansion:
+%
+$$
+f_X = \BE f_X + \sum_{l=1}^\infty \lambda_l^{1/2} c_l \phi_l
+$$
+%
+where $\{ \lambda_l, l \geq 1, \lambda_l \geq \lambda_{l+1} \}$ and $\{ \phi_l, l \geq 1\}$ are eigenvalues and orthonormal eigenfunctions of $\gamma_X$, respectively, and $c_l = \lambda_l^{-1/2}  \langle f_X - \BE f_X , \phi_l\rangle$ are real-valued random variables. The top eigenfunctions are able to provide a finite dimensional approximation of $f_X$, and turn out to be its principal components.
+
+Similar to the multivariate situation, the literature on robust functional PCA can be divided into two main groups: those that robustly estimate $\gamma_X$ or another covariance operator, and those that directly estimate the top eigenfunctions in a robust manner. Among the first group of papers, 
