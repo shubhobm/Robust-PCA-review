@@ -17,6 +17,18 @@ Bailey, S. (2012).
 \newblock {Principal Component Analysis with Noisy and/or Missing Data}.
 \newblock {\em Publ. Astron. Soc. Pac.}, 124:1015--1023.
 
+\bibitem[Bali and Boente, 2014]{BaliBoenteReview}
+Bali, J.~L. and Boente, G. (2014).
+\newblock {Robust Functional Principal Component Analysis}.
+\newblock In {\em {New Advances in Statistical Modeling and Applications}},
+  Studies in Theoretical and Applied Statistics, pages 41--54. Springer.
+
+\bibitem[Bali et~al., 2011]{BaliEtal11}
+Bali, J.~L., Boente, G., Tyler, D.~E., and Wang, J.~L. (2011).
+\newblock {Robust functional principal components: a projection-pursuit
+  approach}.
+\newblock {\em Ann. Statist.}, 39:2852--2882.
+
 \bibitem[Becker et~al., 2011]{BeckerEtal11}
 Becker, S., Cand\'es, E.~J., and Grant, M. (2011).
 \newblock {TFOCS: flexible first-order methods for rank minimization}.
@@ -28,6 +40,11 @@ Berry, M.~W. and Castellanos, M. (2007).
 \newblock {\em Survey of Text Mining II: Clustering, Classification, and
   Retrieval}.
 \newblock Springer.
+
+\bibitem[Boente and Salibian-Barrera, 2015]{BoenteBarrera15}
+Boente, G. and Salibian-Barrera, M. (2015).
+\newblock {S-Estimators for Functional Principal Component Analysis}.
+\newblock {\em J. Amer. Statist. Assoc.}, 110:1100--1111.
 
 \bibitem[Bouwmans et~al., 2014]{BouwmansBook}
 Bouwmans, T., Porikli, F., {H\"oferlin}, B., and Vacavant, A. (2014).
@@ -95,6 +112,12 @@ Georghiades, A., Belhumeur, P., and Kriegman, D. (2001).
 \newblock From {F}ew to {M}any: {I}llumination {C}one {M}odels for {F}ace
   {R}ecognition under {V}ariable {L}ighting and {P}ose.
 \newblock {\em IEEE Trans. Pattern Anal. Mach. Intell.}, 23(6):643--660.
+
+\bibitem[Gervini, 2008]{Gervini08}
+Gervini, D. (2008).
+\newblock {Robust functional estimation using the spatial median and spherical
+  principal components}.
+\newblock {\em Biometrika}, 95:587--600.
 
 \bibitem[Hellton and Thoresen, 2014]{HelltonThoresen14}
 Hellton, K.~H. and Thoresen, M. (2014).
@@ -322,6 +345,11 @@ Yang, S., Shen, H., Meng, J., and Shen, Z. (1999).
 \newblock {A Fixed-point Iteration Algorithm for Robust Kernel Principal
   Component Analysis}.
 \newblock {\em J. Comput. Inf. Syst.}, 10.
+
+\bibitem[Zhang and Chen, 2007]{ZhangChen07}
+Zhang, J.-T. and Chen, J. (2007).
+\newblock {Statistical inferences for functional data}.
+\newblock {\em Ann. Statist.}, 35:1052--1079.
 
 \bibitem[Zhao et~al., 2014]{ZhaoEtal14}
 Zhao, Q., Meng, D., Xu, Z., Zuo, W., and Zhang, L. (2014).

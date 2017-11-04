@@ -81,3 +81,32 @@ r1 <- writePNG(img.noise,target="lenna_orig.png")
 r <- writePNG(img.trunc,target="lenna_recon.png")
 writePNG(pcpmod$L,target="lenna_recon_pcp.png")
 #r3 <- writePNG(img.trunc.kpc,target="lenna_recon_kpc.png")
+
+
+## plot all images and their noisy versions
+add.noise.and.plot = function(img){
+  ## add noise
+  n = nrow(img)
+  p = ncol(img)
+  nn = n*p
+  
+  ## add speckle noise to 10% pixels
+  img.noise = img
+  img.ind = cbind(as.numeric(row(img.noise)), as.numeric(col(img.noise)))
+  n.noise = ceiling(.1*nn)
+  img.noise[img.ind[sample(1:nn, n.noise),]] = sample(c(0,1), n.noise, replace=T)
+  plot(imagematrix(img.noise))
+}
+
+set.seed(08162017)
+defaultPar = par()
+par(mfrow=c(2,4), mai=rep(0.1,4))
+plot(imagematrix(lenna.small))
+plot(imagematrix(yale01.small))
+plot(imagematrix(yale02.small))
+plot(imagematrix(yale28.small))
+add.noise.and.plot(lenna.small)
+add.noise.and.plot(yale01.small)
+add.noise.and.plot(yale02.small)
+add.noise.and.plot(yale28.small)
+par(defaultPar)
